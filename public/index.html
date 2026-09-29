@@ -1,0 +1,2494 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://fe542ef0-a35a-46a5-86ba-ee959f7a94ca.frame.claudeusercontent.com/_f/1790178351-eec9/ -->
+<html lang="en" data-theme="dark" data-comment-mode="" style="color-scheme: dark; cursor: crosshair !important;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.DRL7voHn.js","sample":"sample.DZwWAZDd.js","self":"artifact.Kiow93e4.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.CkRgqq9F.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.B4FSryPi.js"}                                </script><script>(function(){"use strict";function lr(t){return t==="cookie"||t==="query"?t:void 0}var Gn=3e5;function cr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var ur=["light","dark","system"],fr=/^[A-Za-z0-9_-]{1,64}$/,Rt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,dr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function hr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||dr.has(e)}var Tt="data-ldx-props";function pr(t,e){if(e.toLowerCase()===Tt)return!0;const r=t.getAttribute(Tt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var zn="http://www.w3.org/1999/xhtml",mr="http://www.w3.org/2000/svg",vr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),_r=new Set(["script","style"]);function yr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!vr.has(e):t.namespaceURI===mr?!_r.has(e):!1}function Ze(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function gr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ze(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ze(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function wr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=gr(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const L=r.data,E=t.ownerDocument.getSelection?.()??null,w=E!==null&&E.rangeCount>0&&(E.anchorNode===r||E.focusNode===r)?{anchor:E.anchorNode,anchorOffset:E.anchorOffset,focus:E.focusNode,focusOffset:E.focusOffset}:null;let m=-1,k=-1;for(let h=0;h<L.length&&h<e.length;h++){const p=L.charCodeAt(h),x=e.charCodeAt(h);p!==x&&Ze(p,x)&&(m<0&&(m=h),k=h)}const O=m>=0;if(O&&r.replaceData(m,k-m+1,e.slice(m,k+1)),O&&w!==null&&w.anchor!==null&&w.focus!==null)try{E.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var br=new Set(["html","head","body","frameset"]);function Er(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&br.has(t.localName)}function Sr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!fr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Rt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Rt.test(r))return!1}return!0}function Ar(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function kr(t){return t===null||typeof t!="object"?!1:Ar(t.__frame_patch,Sr)}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Tr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Lr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Or(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&ur.includes(r)}var Pr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Mr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Nr(t){return typeof t=="string"&&Mr.includes(t)?t:"other"}var Cr=Object.freeze({until:null,now:!1}),jr="__claude_hot",Fr="__claude_hot_in",Ir=/^__claude_hot(?:_in)?(?::|$)/,Lt=/^[0-9a-z]{1,32}$/,Qe=t=>t===void 0?jr:"__claude_hot:"+t,Ae=t=>t===void 0?Fr:"__claude_hot_in:"+t;function xr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&Ir.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Dr(t){let e=null;try{e=B(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Lt.test(e.k)?null:ue(e.g)?{k:e.k,g:e.g}:{k:e.k}}var $n=262144,Hr=3e3,qr=5e3,Ot=/^[a-z0-9._:-]{1,64}$/,Br=["none","hot-restart","hard-reload"],Ur=["asset","doc","added","removed"],Kr=1500,Gr=/^[0-9a-f]{64}$/;function B(t){return t!==null&&typeof t=="object"?t:null}function ue(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Pt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function zr(t){return t===void 0||typeof t=="string"&&Ot.test(t)}function Mt(t){const e=B(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function et(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Pt(e.seq)&&typeof e.handoff=="string"&&Pr.includes(e.handoff)&&zr(e.note)}function Nt(t){const e=B(t);return e!==null&&ue(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||et(e.from))}function $r(t){const e=B(t);return e!==null&&e.kv===1&&ue(e.gen)&&et(e.from)&&Object.hasOwn(e,"data")}function Wr(t){const e=B(t);return e!==null&&e.__frame_hot_snapshot===!0&&ue(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Mt(e.deadline))&&Pt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Vr(t){const e=B(t);return e!==null&&e.__frame_hot_start===!0&&ue(e.gen)&&et(e.from)}function Xr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ct(t){return B(t)!==null&&!Array.isArray(t)}function Yr(t){const e=B(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Xr(e.ver)&&(e.grant===void 0||Ct(e.grant))&&(e.budgets===void 0||Ct(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ue(e.brokerGen))}function Jr(t){const e=B(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||ue(e.brokerGen))}function jt(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Ft(t){if(t==null||typeof t=="string")return!0;const e=B(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Zr(t){const e=B(t);return e!==null&&typeof e.path=="string"&&Ur.includes(e.kind)&&Ft(e.from)&&Ft(e.to)}function Qr(t){return t===null?null:Object.freeze(t.filter(Zr))}function en(t){const e=B(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&jt(e.from)&&jt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Br.includes(e.required)&&Mt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Gr.test(e.preflight))}var fe=/^[\w.-]+\.js$/;function tn(t,e,r){return r?"inert":typeof e=="string"&&fe.test(e)?t?[e]:"inert":t?"inert":"framed"}var It=Object.freeze({[Symbol("claude.hot.restart")]:!0});function xt(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Qe(e?.k),a=Ae(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{xr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);$r(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function Dt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var rn=/^[^/\\?#]{1,128}$/,Ht=t=>rn.test(t)&&t!=="."&&t!=="..";function qt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ht(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var De="{}";function ke(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Bt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Ut(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function nn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),L=new TextEncoder;let E=null,w=null;try{E=history,w=E.replaceState.bind(E)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let k=Dt(),O=null;try{O=sessionStorage}catch{}const h={storage:O,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:k,key:n?.k};let p=n?.k;const x=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let y=e?.data??{},F=ke(e?.from),P=e?.gen??0,D=e!==null,$=!1,Q=!1,X=null,Oe=!1;const Pe=new AbortController;let Me=null,H=null,ve=null,Ke=!1,le=()=>{};const l=new Promise(o=>{le=o});let b=!1,g=!1,C=!1,N,j=null,W=!1,re=!1,Y=!1,Ne=!1,ee=!1,_e=!1;const Ce=o=>{for(const u of[Qe(o),Ae(o)])try{O?.removeItem(u)}catch{}},K=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},je=()=>ee||=Y&&(H===null||Ne),q=()=>{const o={__frame_hot:!0,ready:H!==null,accept:ve!==null,demand:!0};_e=!ee,_e&&(o.booting=!0),b&&(o.readData=!0),C&&(o.threw=!0),j?.assess&&(o.preflight=!0),K(o,X)};let Fe=!1,Ie=!1,ce=!1,Ge=!1;const ze=()=>{Fe||!Oe||ce||(Fe=!0,K({__frame_reveal_hold:!0},"*"))},ne=()=>new Promise(o=>{let u,f=0;const S=I=>{if(u===void 0)u=I;else if(I!==u||++f>=8){o();return}try{x(S)}catch{o()}};try{x(S)}catch{o()}}),ye=()=>{ce=!0,K({__frame_reveal_ready:!0},"*")},ge=o=>{Ie||(Ie=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=j?.settle?.()??null}catch{}return(f===null?ne():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(ne)).then(ye)}))},$e=()=>{if(Ge||!ce)return;Ge=!0;const o=()=>{try{j?.afterReveal?.()}catch{}};o(),ne().then(()=>{o(),ye()})},i=(o=!1)=>{if(Ke||H===null||!D||!Q)return;Ke=!0;const u=H,f=y;c(()=>{let S;try{S=u(f)}catch(U){throw le(!1),U}let I=!1;try{I=typeof S?.then=="function"}catch{}if(!I){le(!0);return}Promise.resolve(S).then(()=>le(!0),U=>{le(!1),c(()=>{throw U})})}),ge(o?l:r.dcl.then(()=>l))},v=o=>typeof o=="string"&&Ot.test(o)?o:void 0,_=o=>{const u={__frame_hot_restart:!0},f=v(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),K(u,X)},R=Object.freeze({get data(){return Q||(g=!0),!D&&!b&&(b=!0,Q&&q()),y},get from(){return F},get gen(){return P},signal:Pe.signal,snapshot(o){typeof o=="function"&&(Me=o)},ready(o){typeof o!="function"||H!==null||(H=o,ze(),q(),$&&K({__frame_hot_ready:!0,gen:P},X),i())},accept(o){typeof o=="function"&&(ve=o,q())},restart(o){const u={note:o?.note,required:o?.required};if(Q){_(u);return}const f=N;N={note:v(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let G=null,J=()=>{};const he=new Promise(o=>{J=o});let xn=null;const rr=()=>xn??=r.dcl.then(()=>{let o=!1;try{o=G!==null&&G.expect()}catch{}if(!o)return;const u=G.maxMs;return new Promise(f=>{he.then(f),a(f,u)})}),nr=()=>{if(!W||re||j===null)return;re=!0;const o=j;rr().then(()=>{try{ce||o.afterStart(Ut(e),!1)}catch{}})},or=o=>{e!==null&&g&&(b=!0),y={},F=null,P=0;try{O?.removeItem(Ae(n?.k))}catch{}e!==null&&!o&&ge(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{W=!0,ge(rr().then(()=>H!==null?l:void 0)),nr()};try{addEventListener("error",()=>{C||H!==null||(C=!0,q())})}catch{}const ar=()=>{a(()=>{!ee&&je()&&_e&&q()},0)};try{Y=document.readyState==="complete",Y||addEventListener("load",()=>{Y=!0,ar()},{once:!0})}catch{Y=!0}je(),l.then(()=>{Ne=!0,ar()});let pe=-1,vt,_t,xe=!0,yt=!1,gt,We=null;const wt=o=>{const u=We===null;We=xe&&o[0]!=="withheld"?o:["withheld",o[1],De];let f=o[0];if(xe&&f!=="withheld"){const I={ver:k,handoff:f};vt!==void 0&&(I.seq=vt),_t!==void 0&&(I.note=_t);try{if(O===null)throw new Error("no storage");O.setItem(Qe(p),'{"kv":1,"gen":'+pe+',"from":'+JSON.stringify(I)+(gt!==void 0?',"k":'+JSON.stringify(gt):"")+',"data":'+(f==="ok"?o[2]:De)+"}")}catch{f="unavailable"}}else{f="withheld",Ce(p);try{j?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:pe,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),K(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},we=o=>{try{return Nr(o?.name)}catch{return"other"}},be=(o,u,f=0)=>wt(u===void 0?[o,f,De]:[o,f,De,we(u)]),Hn=o=>{if(o.gen<=pe)return;const u=pe>=0;if(pe=o.gen,vt=o.seq,_t=v(o.note),typeof o.key=="string"&&Lt.test(o.key)&&o.key!==p&&(Ce(p),p=o.key),xe&&=o.handoff!==!1,u){We!==null?wt(We):yt&&K({__frame_hot_held:!0,gen:pe},X);return}Pe.abort();const f=Object.freeze({handoff:xe,timeoutMs:o.timeoutMs,deadline:o.deadline??Cr}),S=Me,I=()=>{if(xe)try{gt=j?.capture()}catch{}if(S===null){be("empty");return}let T=!1;const z=a(()=>{T||(T=!0,be("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(Ee=>{if(T)return;T=!0,s(z);let oe;try{oe=JSON.stringify(Ee)}catch(bt){be("unclonable",bt);return}if(typeof oe!="string"){be("unclonable");return}let ae=oe.length;try{ae=L.encode(oe).length}catch{}if(ae>262144){be("oversize",void 0,ae);return}wt(["ok",ae,oe])},Ee=>{T||(T=!0,s(z),be("snapshot_error",Ee))})};let U=null;try{U=j?.holdForIme()??null}catch{}if(U===null)I();else{yt=!0,K({__frame_hot_held:!0,gen:pe},X);const T=()=>{yt=!1,I()};U.then(T,T)}},qn=o=>{if(!$||D||H===null||o.gen!==P)return;let u=null;try{u=xt(O,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{O?.removeItem(Ae(n?.k))}catch{}}y=u?.data??{},F=Bt(ke(u?.from??o.from),ke(o.from)),u!==null&&(P=u.gen),D=!0,$=!1;const f=Ut(u);l.then(S=>{try{S&&j?.afterStart(f,!0)}catch{}}),i(!0)};let Ve=0;const Bn=o=>{const u=ve;if(u===null||o.id<=Ve)return;Ve=o.id;const f=j?.assess;if(o.preflight===void 0||f===void 0){sr(o,u);return}let S=!1;const I=z=>{S||(S=!0,s(T),o.id===Ve&&sr(o,u,z))},U=()=>I(f.timeout(o)),T=a(U,Kr+100);f.run(o,window).then(I,U)},sr=(o,u,f)=>{let S,I=!1,U=!1,T,z,Ee=null;const oe=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ae=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},bt=()=>{if(!oe("adopt")||o.id!==Ve)return;const A=o.to.ver;if(Xe.required!=="none"){ae(`u.adopt() needs required 'none', it is '${Xe.required}'`);return}if(!Ht(A)){ae("u.adopt() cannot address this version");return}if(!k||A===k)return;const te=k,Z=h.entry;let Ye="",St,Se=null,Je;try{Ye=location.href,St=E.state,Se=qt(Ye,te,A),Se!==null&&(w(St,"",Se),location.pathname.startsWith("/_f/"+A+"/")?Se=location.href:Je="navigate event canceled")}catch(kt){Je=we(kt)}if(Je!==void 0){z="adopt_failed",ae(`adopt_failed ${Je}; URL not changed`);return}Se===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",k=h.ver=A;try{h.entry=qt(Z,te,A)??Z}catch{}const At=Se;Ee=()=>{if(k===A){if(At!==null)try{if(location.href!==At)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(w(St,"",Ye),location.href!==Ye){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(kt){m(`claude.hot: adopt_revert_failed ${we(kt)} - URL still at the new version`);return}k=h.ver=te,h.entry=Z,At===null&&(z=void 0)}}},Xe=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Qr(o.changed),required:o.required,deadline:o.deadline,adopt:bt,defer(){return oe("defer")&&Xe.deadline.now&&ae("u.defer() past the deadline"),It},restart(A){return oe("restart"),T==="restart"&&!U&&(S??=v(A?.note),I||=A?.required==="hard-reload"),It},...f?.update}),Un=(A,te)=>{U=!0,A==="threw"?(Ee?.(),S??=we(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Z={__frame_hot_verdict:!0,id:o.id};Z.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Z.verdict==="restart"&&(I&&(Z.required="hard-reload"),S!==void 0&&(Z.note=S)),z!==void 0&&(Z.verdict==="applied"||z!=="adopted")&&(Z.adopt=z),K(Object.assign(Z,f?.verdict),X)};let ir=!1;const Et=(A,te)=>ir?!1:(ir=!0,s(Kn),Un(A,te),!0),Kn=a(()=>Et("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(Xe)).then(()=>Et("settled"),A=>{!Et("threw",A)&&T==="adopt"&&_({note:we(A).toLowerCase()}),m("claude.hot: accept",we(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:R,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:R,boot:h,afterConnect(){Oe=!0,(e!==null||H!==null)&&ze()},onInit(o,u){X=u,Q=!0;const f=Nt(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(D=!0,F=Bt(F,ke(f.from)),Dn()):($=f?.phase==="pending",or($),D=!$,P=f?.gen??0,F=ke(f?.from)),q(),_e&&a(()=>{ee||(ee=!0,q())},qr),$&&H!==null&&K({__frame_hot_ready:!0,gen:P},u),N!==void 0&&(_(N),N=void 0),i()},onNoInit(){Q=!0,or(!1),D=!0,i()},onShell(o){return o?.__frame_revealed===!0?($e(),!1):Wr(o)?(Hn(o),!0):Vr(o)?(qn(o),!0):en(o)?(Bn(o),!0):!1},attachExtras(o){j=o,nr(),o.assess&&q()},inSlot:()=>Ae(p),hydration(o,u){G??={expect:o,maxMs:u}},hydrated(){J()},carried(){return D?y:{}},presented:()=>ce}}var Wn="frame_ldx_runtime",on="frame_ldx_build",Vn="script#an-form",an=256;function Kt(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=an&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function tt(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var rt;function sn(){if(rt)return rt;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};rt=t;const e=window.HTMLMediaElement?.prototype;e&&(tt(e,"play",a=>{Kt(t.media,a,s=>s.paused),t.onStart?.(a)}),tt(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&tt(n,"connect",a=>{const s=a.context;s instanceof r&&(Kt(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function ln(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function cn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:ln(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function un(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var fn=500,dn=2e4,hn="data-token-reads",pn="data-frame-refused-watch",mn="data-frame-unsupported",vn=/(?:^|\s)stylesheet(?:\s|$)/i;function _n(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&vn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function yn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(pn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},L=h=>h.ok||h.status===304;let E=!1,w=!1;const m=()=>removeEventListener("error",O,!0),k=async h=>{const p=await s(h,d);if(L(p))w=!0;else if(p.status===403){const x=await s(a,d);if(L(x)){const y=(await s(h,d)).status;y===403?(w=!0,document.documentElement.setAttribute(mn,""),r()):y<500&&(w=!0)}else x.status>=400&&x.status<500&&(w=!0)}},O=h=>{if(w||E)return;if(document.documentElement.hasAttribute(hn)){w=!0,m();return}const p=_n(h.target,n);p&&(E=!0,c(()=>{k(p).catch(()=>{}).finally(()=>{E=!1,w&&m()})},fn))};addEventListener("error",O,!0),addEventListener("load",m,{once:!0}),c(m,dn)}var nt="__frame_scroll",gn=150,wn=310,bn=160,En=3e4;function Sn(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=y=>{try{sessionStorage.setItem(nt,JSON.stringify({y}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const y=s;s=null,c(y)},L=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,gn)};try{addEventListener("scroll",L,{passive:!0}),addEventListener("pagehide",d)}catch{}const E=()=>{let y;try{y=sessionStorage.getItem(nt)}catch{return null}if(y===null)return null;let F;try{F=JSON.parse(y)}catch{F=null}const P=F?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(nt)}catch{}return null}return P};let w=!1;const m=y=>{try{const F=scrollY;scrollTo({top:y,left:0,behavior:"instant"}),a=y,n=!0,clearTimeout(t),s=null,c(y);const P=scrollY;P!==F&&(e=!0),P!==y&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===P){const D=E();m(D!==null?D:a)}}catch{}},{once:!0}))}catch{}},k=()=>{try{return!!location.hash}catch{return!0}};let O=!1;const h=()=>{try{if(O||innerWidth>wn||innerHeight>bn)return;O=!0;const y=Date.now(),F=()=>{try{removeEventListener("resize",F)}catch{}if(Date.now()-y>En||r||k())return;const P=E();m(P!==null?P:a)};addEventListener("resize",F)}catch{}};let p=!1,x=!1;return{restore(){if(p||(p=!0,k()))return;const y=E();y!==null&&(m(y),h())},promoted(){if(x||(x=!0,k()))return;const y=E();y!==null?(m(y),h()):n&&m(a)}}}function An(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:L=>L})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(L=>L?.bootTopLevel?L.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Xn="modulepreload",Yn=function(t){return"/"+t},Jn={},kn=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},Rn=window===top,Gt=Object.getOwnPropertyDescriptor(window,"claude"),He=tn(Rn,window.__FRAME_PREAMBLE?.topLevel,Gt?.writable===!1),ot=typeof He=="object"&&He[0],M=ot?un():cn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&He==="framed")try{M.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var zt=1e4,Tn=2e3,at=2e3,st=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function $t(t){for(const e of st)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Re=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Te=window.__FRAME_PREAMBLE?.transforms,it=window.__FRAME_PREAMBLE?.comments,lt=window.__FRAME_PREAMBLE?.translate,de=window.__FRAME_PREAMBLE?.ldx,ct=lr(window.__FRAME_PREAMBLE?.cred);function Wt(t){return kn(()=>import("/_runtime/"+t),void 0)}var Le=new Set,Vt=setTimeout,Ln=fetch,On=AbortController,Pn=800+800*Math.random(),Mn=3e3,qe=null,Xt=new Map;function Nn(t,e){let r=Xt.get(t);return r||Xt.set(t,r=Cn(t,e)),r}function Cn(t,e){if(qe?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new On;let n=!1;return Vt(()=>{n=!0,r.abort()},Mn),Ln("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":qe?.has(t)?"csp":"net")}function se(t){if(!qe){const e=qe=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Wt(t).catch(()=>new Promise(e=>Vt(e,Pn)).then(()=>Wt(t+"?r=1")).then(e=>(e!==void 0&&Le.add(t),e)))}function Yt(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:mt,hooks:Be,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var me=null,V=null;function Jt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var ut=!1,Be={editBefore:null,edit:null};function jn(t,e,r=!1){const n=[];let a;if(r)try{Be.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!hr(d)||pr(c,d))){a=s.target;break}if(s.text!==void 0&&(!yr(c)||Er(c))){a=s.target;break}for(const[d,L]of Object.entries(s.attrsSet??{}))if(!Qt(c,d)){try{c.setAttribute(d,L)}catch{}Zt(c,d,L)}for(const d of s.attrsRemoved??[])Qt(c,d)||(c.removeAttribute(d),Zt(c,d,null));typeof s.text=="string"&&wr(c,s.text),n.push(s.target)}if(r)try{Be.edit?.(t.seq,n,a)}catch{}if(a!==void 0){M.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Zt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Qt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function er(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,ut=!0):ut&&(delete e.dataset.theme,e.style.colorScheme="",ut=!1)}var ie=new Map,ft=null;function dt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Ue(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ht(t,e){for(const[r,n]of ie)n.done||(e&&n.asked?e(r,n):Ue(n,t))}function Fn(){for(const t of ie.values())if(t.asked&&!t.done)return!0;return!1}var In=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),pt=!1,mt=(t,e)=>{let r=ie.get(t);if(r?.nulled&&pt)r=dt(),ie.set(t,r);else if(!r||r.done){r?.nulled&&V&&M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},V);return}const n=typeof e=="function"?Object.setPrototypeOf(e,In):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function tr(){const t=Gt?.value??{};Jt(window,"claude",t);for(const e of Object.keys(Re)){if(t[e]!==void 0){Jt(t,e,t[e]);continue}ie.set(e,dt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Re,r))return Promise.resolve(null);let n=ie.get(r);return n?(ft&&(n.nulled||n.want!==void 0)&&(n=ft(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(He==="framed"){let t;const e=Te&&fe.test(Te)?se(Te).catch(l=>{t={f:Te,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const b=l.target,g=b&&b.closest?b.closest("a[href],area[href]"):null;if(!g)return;const C=g.getAttribute("href");if(!C)return;let N;try{N=new URL(C,document.baseURI)}catch{return}if((N.protocol==="http:"||N.protocol==="https:")&&N.origin!==location.origin){l.preventDefault();const j=(g.getAttribute("target")??"").toLowerCase(),W=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(j);M.post({__frame_nav:!0,url:N.href,newTab:W},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const L=sn();e.then(l=>l?.installEscapeForward?.(c,b=>{V&&M.post(b,V)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const b=M.port("*");l.wireNav(b),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,b,L)});let E=null;try{E=Sn()}catch{}const w=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,k=null;try{k=Dr(window.name),m=xt(null,k)}catch{}const O=tr();let h=null;try{h=nn(O,m,{post:(l,b)=>M.post(l,b),dcl:w},k)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const x=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!de&&fe.test(de)&&document.querySelector("script#an-form")!==null;try{h?.hydration(x,Hr)}catch{}let y=null,F=0;const P=M.on((l,b,g,C)=>{$t(b)&&Rr(l)&&(C(),p=l.__frame_init,V=b,P(),clearTimeout(F),y?.())});if(ct)for(const l of st)try{l.endsWith(":*")||M.post({__frame_cred:ct},l)}catch{}M.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const D=setTimeout,$=clearTimeout;let Q=()=>NaN,X=()=>[];try{Q=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Oe=0;const Pe=()=>{try{M.post({__frame_alive:!0},"*")}catch{}Oe=D(Pe,Tn)},Me=()=>$(Oe);Pe(),addEventListener("load",Me,{once:!0});const H=new Promise(l=>{y=l,F=setTimeout(()=>{P(),l()},zt)}),ve=new WeakSet;addEventListener("error",l=>{l.target&&ve.add(l.target)},!0);try{yn(Dt(),ct,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const Ke=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(g=>!g.sheet&&!g.disabled&&!ve.has(g)&&g.getAttribute("href")&&URL.canParse(g.href)&&(!g.media||matchMedia(g.media).matches))}catch{}let b=l.length;return b===0?Promise.resolve():new Promise(g=>{try{const C=at-Q(),N=D(g,C>0?C<at?C:at:0),j=()=>{--b===0&&($(N),g())};for(const W of l)W.addEventListener("load",j,{once:!0}),W.addEventListener("error",j,{once:!0})}catch{g()}})};w.then(()=>{try{E?.restore()}catch{}}),Promise.all([H,w,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!V)return;let b=!1;try{b=l?.declaresCover?.()===!0}catch{}M.post({__frame_layout:{cover:b}},V)});const le={cb:null};M.on((l,b)=>{if($t(b)&&Tr(l)){try{E?.promoted()}catch{}le.cb?.()}}),H.then(async()=>{if(!p||!V){ht();try{h?.onNoInit()}catch{}return}if(er(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,L)),p.hostKeys!==void 0){const i=V,v=p.hostKeys;e.then(_=>_?.installHostKeyForward?.(d,v,R=>M.post(R,i)))}try{h?.onInit(p.hot,V)}catch{}let l;const b=()=>{try{!l&&de&&x()&&(l=se(de),l.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};b(),w.then(b);const g=V,C=M.port(g),N=(i,v)=>M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:v}},g),j=(i,v,_)=>{new Promise(R=>R(Nn(v,_))).then(R=>N(i,R),()=>N(i))},W=i=>M.post({__frame_cap_recovered:{cap:i}},g);let re=p.brokerGen;const Y=()=>h?.boot.ver??"",Ne=Y(),ee=(i,v)=>{const _=Y();$(v.t),v.want=_,v.t=D(()=>{v.done||Ue(v,_)},zt),M.post({__frame_cap_want:!0,cap:i,ver:_},g)},_e=(i,v)=>{const _=ie.get(i.cap),R=Re[i.cap];if(!v||!_||_.done||_.want!==i.ver||!fe.test(R))return;if($(_.t),_.want=void 0,re=i.brokerGen??re,i.ver!==Y()){ee(i.cap,_);return}if(!i.grant||i.cap==="network"){Ue(_,i.ver);return}const G=me,J=me={...G,capabilities:{...G.capabilities,[i.cap]:i.grant},capBudgets:{...G.capBudgets,[i.cap]:{...G.capBudgets[i.cap],...i.budgets}}};se(R).then(he=>{Le.has(R)&&W(i.cap),J.brokerGen=re,pt=!0;try{he?.install?.(J)}catch{N(i.cap,"install")}finally{pt=!1}},he=>j(i.cap,R,he)).then(()=>{_.done||Ue(_,i.ver)})};let Ce=!1,K=!1;M.on((i,v,_)=>{if(v!==g)return;try{if(h?.onShell(i))return}catch{}if(Or(i)&&er(i.__frame_theme.theme),Yr(i)&&_e(i,_),_&&Jr(i)&&(re=i.brokerGen??re),Lr(i)){const J=i.__frame_host_visible.visible;e.then(he=>he?.applyHostVisible?.(J,L))}kr(i)&&jn(i.__frame_patch,g,_);const R=i?.__fc_mode;R&&typeof R=="object"&&!Ce&&it&&fe.test(it)&&(Ce=!0,se(it).then(J=>J.install?.(g,R.on===!0,C)).catch(()=>{}));const G=i?.__ft_cmd;G&&typeof G=="object"&&!K&&lt&&fe.test(lt)&&(K=!0,se(lt).then(J=>J.install?.(g,G,C)).catch(()=>{}))});const je=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Re,i)).map(i=>[i,Re[i]]).filter(i=>typeof i[1]=="string"&&fe.test(i[1])),q=g;let Fe=()=>{};const Ie=new Promise(i=>{Fe=i}),ce=m!==null||Nt(p.hot)||p.hostVisible===!1||p.hostOverlays===!0,Ge=w.then(()=>ce?Ie:new Promise(i=>D(i,0))).then(Ke).then(()=>{let i=!0;try{i=ce||Fn()}catch{}return i?Ie:void 0}).then(()=>{Me();const i=cr(X,Q);M.post(i?{__frame_ready:!0,nav:i}:{__frame_ready:!0},q),e.then(v=>{v?.installSizeReporter?.(q,le,C),v?.installPaintReporter?.(C)})}),ze=await Promise.allSettled(je.map(([,i])=>se(i))),ne=await e;if(ne?.buildBoot||(t?j("_transforms",t.f,t.e):N("_transforms")),ne?.buildBoot)try{me=ne.buildBoot(p,ne.TRANSFORMS??{},{shellOrigin:q,mount:mt,hooks:Be,shell:C},i=>M.post({__frame_cap_telemetry:i},q))}catch{N("_transforms","install"),me=Yt(p,q,C)}else me=Yt(p,q,C);ne?.buildBoot&&Le.has(Te??"")&&W("_transforms");const ye=me;ye.brokerGen=re,ze.forEach((i,v)=>{const[_,R]=je[v];if(i.status!=="fulfilled"){j(_,R,i.reason);return}Le.has(R)&&W(_);try{i.value?.install?.(ye)}catch{N(_,"install")}});const ge=p.capWants===!0;ge&&(ft=(i,v)=>{const _=Y();if(!_)return v;if(!v.nulled)return v.want!==_&&ee(i,v),v;if(_===v.ver)return v;const R=dt();return ie.set(i,R),ee(i,R),R}),ht(Ne,ge&&Y()!==Ne?ee:void 0),Fe(),await Ge;let $e=!1;try{$e=x()}catch{}de&&$e?(l??se(de)).then(i=>i?.boot?.({shellOrigin:g,build:ye.flags.has(on),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?N("_ldx"):Le.has(de)&&W("_ldx")}):h?.hydrated()})}else ot&&(tr(),An(ot,st,se,{settle:ht,mount:mt}))})();</script><!-- /frame-runtime -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SnipñDrip — book trusted hair, nail &amp; beauty pros, on your terms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241A14;
+    --paper:#FBF3E7;
+    --paper-dim:#F1E3CE;
+    --paper-line:rgba(36,26,20,0.13);
+    --amber:#D9A441;
+    --amber-ink:#5C3B0F;
+    --plum:#4A2545;
+    --plum-pale:#EFE1EC;
+    --brick:#A33D2C;
+    --brick-pale:#F5E1DC;
+    --moss:#5C6B4F;
+    --moss-pale:#E7ECDF;
+    --outer-bg:#EFE7DA;
+    --shadow:0 18px 40px rgba(36,20,10,0.22);
+    color-scheme: light;
+  }
+  :root:not([data-theme="light"]) {
+    /* app chrome keeps its own brand palette regardless of system theme by design */
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    font-family:'Inter',ui-sans-serif,system-ui,sans-serif;
+    background:var(--outer-bg);
+    color:var(--ink);
+    min-height:100dvh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;}
+  button{font-family:inherit;}
+  .backdrop-label{
+    position:fixed; top:24px; left:0; right:0; text-align:center;
+    font-family:'Fraunces',serif; font-size:14px; letter-spacing:.01em;
+    color:rgba(36,26,20,0.38); z-index:0;
+  }
+
+  /* ---------- phone shell ---------- */
+  .phone{
+    position:relative;
+    width:390px; height:844px;
+    background:var(--paper);
+    border-radius:44px;
+    border:8px solid #17110D;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+  @media (max-width:480px){
+    body{padding:0; background:var(--paper);}
+    .phone{width:100vw; height:100dvh; border-radius:0; border:none; box-shadow:none;}
+    .backdrop-label{display:none;}
+  }
+  .notch{
+    position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:120px; height:26px; background:#17110D; border-radius:0 0 16px 16px; z-index:50;
+  }
+
+  /* ---------- header ---------- */
+  .app-header{
+    position:relative; z-index:5;
+    padding:calc(18px + env(safe-area-inset-top,0px)) 20px 14px;
+    background:var(--ink); color:var(--paper);
+    flex-shrink:0;
+  }
+  .app-header .row{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .brand{display:flex; align-items:center; gap:9px;}
+  .brand-mark{
+    width:30px;height:30px;border-radius:9px;background:var(--amber);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .brand-mark svg{width:17px;height:17px;stroke:var(--ink);}
+  .brand-name{font-family:'Fraunces',serif; font-weight:600; font-size:20px; letter-spacing:.01em;}
+  .loc-pill{
+    display:flex; align-items:center; gap:5px; font-size:12.5px; color:rgba(251,243,231,0.72);
+    margin-top:2px;
+  }
+  .loc-pill svg{width:12px;height:12px;stroke:rgba(251,243,231,0.72);}
+  .icon-btn{
+    width:36px;height:36px;border-radius:50%;border:1px solid rgba(251,243,231,0.22);
+    background:rgba(251,243,231,0.06); display:flex;align-items:center;justify-content:center;
+    cursor:pointer; flex-shrink:0;
+  }
+  .icon-btn svg{width:17px;height:17px;stroke:var(--paper);}
+  .icon-btn.back svg{stroke:var(--ink);}
+  .header-title{font-family:'Fraunces',serif;font-weight:600;font-size:18px;}
+  .detail-header{
+    background:var(--paper); color:var(--ink); border-bottom:1px solid var(--paper-line);
+    display:flex; align-items:center; gap:12px;
+    padding:calc(16px + env(safe-area-inset-top,0px)) 18px 14px;
+  }
+  .search-bar{
+    margin-top:14px; background:rgba(251,243,231,0.1); border:1px solid rgba(251,243,231,0.2);
+    border-radius:14px; padding:11px 14px; display:flex; align-items:center; gap:9px;
+  }
+  .search-bar svg{width:16px;height:16px;stroke:rgba(251,243,231,0.65); flex-shrink:0;}
+  .search-bar span{font-size:13.5px; color:rgba(251,243,231,0.65);}
+
+  /* ---------- scroll area ---------- */
+  .screen{
+    display:none; flex-direction:column; height:100%; min-height:0;
+  }
+  .screen.active{display:flex;}
+  .scroll{
+    flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch;
+    padding:18px 18px 100px;
+  }
+  .scroll.no-nav-pad{padding-bottom:28px;}
+  .scroll::-webkit-scrollbar{width:0;}
+
+  /* ---------- section basics ---------- */
+  .section-head{display:flex; align-items:baseline; justify-content:space-between; margin:22px 0 12px;}
+  .section-head:first-child{margin-top:0;}
+  .section-head h2{font-size:18px; font-weight:600; margin:0;}
+  .section-head a{font-size:12.5px; color:var(--amber-ink); text-decoration:none; font-weight:600;}
+
+  .chip-row{display:flex; gap:9px; overflow-x:auto; padding-bottom:4px; margin:0 -18px; padding-left:18px; padding-right:18px;}
+  .chip-row::-webkit-scrollbar{display:none;}
+  .cat-chip{
+    flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:7px;
+    width:74px; cursor:pointer;
+  }
+  .cat-chip .ico{
+    width:56px;height:56px;border-radius:18px; background:var(--paper-dim);
+    display:flex;align-items:center;justify-content:center; border:1px solid var(--paper-line);
+  }
+  .cat-chip .ico svg{width:22px;height:22px;stroke:var(--plum);}
+  .cat-chip span{font-size:11px; text-align:center; line-height:1.25; font-weight:600;}
+
+  .trust-banner{
+    display:flex; gap:12px; align-items:flex-start;
+    background:var(--plum); color:var(--plum-pale); border-radius:20px; padding:16px 16px;
+    margin:20px 0 4px;
+  }
+  .trust-banner .ico{width:34px;height:34px;border-radius:10px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .trust-banner svg{width:18px;height:18px;stroke:#F3E9F1;}
+  .trust-banner strong{display:block; font-size:13.5px; color:#fff; margin-bottom:2px;}
+  .trust-banner p{margin:0; font-size:12px; line-height:1.5; color:rgba(243,233,241,0.85);}
+
+  /* ---------- stylist card ---------- */
+  .stylist-card{
+    display:flex; gap:13px; padding:14px 4px; border-bottom:1px solid var(--paper-line);
+    cursor:pointer; align-items:flex-start;
+  }
+  .stylist-card:first-child{padding-top:2px;}
+  .avatar{
+    width:58px;height:58px;border-radius:50%; flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:#fff;
+  }
+  .avatar.sm{width:40px;height:40px;font-size:13px;}
+  .avatar.lg{width:84px;height:84px;font-size:26px;}
+  .s-info{flex:1; min-width:0;}
+  .s-info .name-row{display:flex; align-items:center; gap:6px;}
+  .s-info h3{font-size:15px; font-weight:600; margin:0; font-family:'Inter';}
+  .verified-dot{width:15px;height:15px;border-radius:50%;background:var(--moss);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .verified-dot svg{width:9px;height:9px;stroke:#fff;stroke-width:3;}
+  .s-info .spec{font-size:12.5px; color:#6b5f54; margin-top:1px;}
+  .s-meta{display:flex; align-items:center; gap:10px; margin-top:7px; font-size:12px; color:#6b5f54;}
+  .s-meta .stars{display:flex; align-items:center; gap:3px; color:var(--amber-ink); font-weight:600;}
+  .s-meta svg{width:12px;height:12px; fill:var(--amber); stroke:none;}
+  .s-price{text-align:right; flex-shrink:0; font-size:12px; color:#6b5f54;}
+  .s-price strong{display:block; font-family:'Fraunces',serif; font-size:15px; color:var(--ink); font-weight:600;}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    border:none; border-radius:999px; padding:14px 20px; font-weight:600; font-size:14.5px;
+    cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; width:100%;
+  }
+  .btn-primary{background:var(--amber); color:var(--amber-ink);}
+  .btn-primary:active{transform:scale(0.98);}
+  .btn-ghost{background:transparent; color:var(--ink); border:1.5px solid var(--paper-line);}
+  .btn-plum{background:var(--plum); color:#fff;}
+  .btn-sm{padding:9px 16px; font-size:12.5px; width:auto;}
+  .sticky-cta{
+    position:absolute; left:0; right:0; bottom:0; padding:14px 18px calc(16px + env(safe-area-inset-bottom,0px));
+    background:linear-gradient(to top, var(--paper) 65%, transparent); z-index:6;
+  }
+
+  /* ---------- bottom nav ---------- */
+  .bottom-nav{
+    display:flex; background:var(--ink); flex-shrink:0; z-index:10;
+    padding:10px 6px calc(10px + env(safe-area-inset-bottom,0px));
+  }
+  .nav-item{
+    flex:1; display:flex; flex-direction:column; align-items:center; gap:4px;
+    background:none; border:none; cursor:pointer; padding:4px; color:rgba(251,243,231,0.45);
+  }
+  .nav-item svg{width:21px;height:21px; stroke:rgba(251,243,231,0.45);}
+  .nav-item span{font-size:10px; font-weight:600;}
+  .nav-item.active{color:var(--amber);}
+  .nav-item.active svg{stroke:var(--amber);}
+
+  /* ---------- portfolio ---------- */
+  .portfolio-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:6px;}
+  .swatch{aspect-ratio:1; border-radius:14px; position:relative; overflow:hidden;}
+  .swatch::after{content:'';position:absolute; inset:0;}
+  .pat-braid{background:repeating-linear-gradient(115deg, #5C3B23 0 6px, #7A5233 6px 12px, #4A2E1B 12px 18px);}
+  .pat-locs{background:repeating-linear-gradient(90deg, #3D2A20 0 8px, #6B4A2F 8px 16px);}
+  .pat-curl{background:radial-gradient(circle at 30% 30%, #B9832A 0 10px, transparent 11px) , radial-gradient(circle at 70% 60%, #D9A441 0 12px, transparent 13px), #7A5233;}
+  .pat-fade{background:linear-gradient(180deg, #2B2016 0%, #6B5642 60%, #C9B79A 100%);}
+  .pat-silk{background:linear-gradient(120deg,#3A2A22,#8A6A45 50%,#3A2A22);}
+  .pat-wig{background:repeating-radial-gradient(circle at 50% 20%, #4A2545 0 5px, #6B3D63 5px 10px);}
+  .pat-nails{background:repeating-linear-gradient(0deg, #F5E1DC 0 14px, #D9A441 14px 16px), #8A6A1E;}
+  .pat-nailsart{background:radial-gradient(circle at 50% 22%, #A33D2C 0 6px, transparent 7px) 0 0/33% 50%, radial-gradient(circle at 50% 22%, #4A2545 0 6px, transparent 7px) 33% 0/33% 50%, radial-gradient(circle at 50% 22%, #5C6B4F 0 6px, transparent 7px) 66% 0/34% 50%, #F1E3CE;}
+  .pat-makeup{background:linear-gradient(160deg, #A33D2C 0%, #D9A441 45%, #F5E1DC 100%);}
+  .pat-glam{background:radial-gradient(circle at 35% 65%, #4A2545 0 22%, transparent 23%), linear-gradient(200deg,#8A6A1E,#D9A441);}
+
+  /* ---------- profile hero ---------- */
+  .stylist-hero{
+    padding:20px 20px 18px; text-align:center; border-bottom:1px solid var(--paper-line);
+    background:var(--paper-dim);
+  }
+  .stylist-hero .avatar{margin:0 auto 12px;}
+  .stylist-hero h2{font-size:21px; margin:0 0 3px; font-weight:600;}
+  .stylist-hero .spec{font-size:13px; color:#6b5f54;}
+  .stat-row{display:flex; justify-content:center; gap:22px; margin-top:16px;}
+  .stat{text-align:center;}
+  .stat strong{display:block; font-family:'Fraunces',serif; font-size:17px; font-weight:600;}
+  .stat span{font-size:11px; color:#6b5f54;}
+
+  .service-row{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:13px 4px; border-bottom:1px solid var(--paper-line); cursor:pointer;
+  }
+  .service-row .radio{
+    width:20px;height:20px;border-radius:50%;border:1.5px solid var(--paper-line); flex-shrink:0;
+    display:flex;align-items:center;justify-content:center; margin-right:12px;
+  }
+  .service-row.selected .radio{border-color:var(--amber-ink); background:var(--amber);}
+  .service-row.selected .radio::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--ink);}
+  .service-row .info{display:flex; align-items:center; flex:1;}
+  .service-row .txt strong{display:block; font-size:14px; font-weight:600;}
+  .service-row .txt span{font-size:12px; color:#6b5f54;}
+  .service-row .price{font-family:'Fraunces',serif; font-weight:600; font-size:14.5px;}
+
+  .review{padding:14px 4px; border-bottom:1px solid var(--paper-line);}
+  .review .top{display:flex; align-items:center; gap:9px; margin-bottom:7px;}
+  .review .top strong{font-size:13.5px;}
+  .review .stars-sm{display:flex; gap:2px;}
+  .review .stars-sm svg{width:11px;height:11px; fill:var(--amber); stroke:none;}
+  .review p{margin:0; font-size:13px; line-height:1.55; color:#40342a;}
+
+  /* ---------- step flow ---------- */
+  .steps-dots{display:flex; gap:6px; padding:0 18px 14px;}
+  .steps-dots i{flex:1; height:4px; border-radius:99px; background:var(--paper-line);}
+  .steps-dots i.done{background:var(--amber);}
+  .step-title{font-size:19px; font-weight:600; margin:2px 0 4px;}
+  .step-sub{font-size:13px; color:#6b5f54; margin:0 0 18px;}
+
+  .day-row{display:flex; gap:9px; overflow-x:auto; margin:0 -18px 18px; padding:0 18px 4px;}
+  .day-row::-webkit-scrollbar{display:none;}
+  .day-chip{
+    flex-shrink:0; width:58px; padding:11px 0; border-radius:16px; text-align:center;
+    border:1.5px solid var(--paper-line); cursor:pointer;
+  }
+  .day-chip span{display:block;}
+  .day-chip .dow{font-size:10.5px; color:#6b5f54; font-weight:600;}
+  .day-chip .num{font-family:'Fraunces',serif; font-size:17px; font-weight:600; margin-top:2px;}
+  .day-chip.selected{background:var(--ink); border-color:var(--ink);}
+  .day-chip.selected .dow, .day-chip.selected .num{color:var(--paper);}
+
+  .time-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:9px;}
+  .time-chip{
+    padding:11px 0; text-align:center; border-radius:12px; border:1.5px solid var(--paper-line);
+    font-size:13px; font-weight:600; cursor:pointer;
+  }
+  .time-chip.selected{background:var(--amber); border-color:var(--amber); color:var(--amber-ink);}
+
+  .field{margin-bottom:16px;}
+  .field label{display:block; font-size:12px; font-weight:600; color:#6b5f54; margin-bottom:6px;}
+  .field input, .field textarea{
+    width:100%; border:1.5px solid var(--paper-line); border-radius:12px; padding:12px 13px;
+    font-family:inherit; font-size:14px; background:var(--paper); color:var(--ink);
+  }
+  .urgency-toggle{
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    background:var(--paper-dim); border-radius:14px; padding:13px 14px; margin-top:6px;
+  }
+  .urgency-toggle .txt strong{display:block; font-size:13.5px;}
+  .urgency-toggle .txt span{font-size:11.5px; color:#6b5f54;}
+  .switch{width:42px;height:25px;border-radius:99px;background:var(--paper-line); position:relative; cursor:pointer; flex-shrink:0;}
+  .switch::after{content:'';position:absolute; top:3px;left:3px; width:19px;height:19px;border-radius:50%;background:#fff; transition:transform .15s ease; box-shadow:0 1px 3px rgba(0,0,0,0.25);}
+  .switch.on{background:var(--moss);}
+  .switch.on::after{transform:translateX(17px);}
+
+  .pay-option{
+    display:flex; align-items:center; gap:12px; padding:14px; border:1.5px solid var(--paper-line);
+    border-radius:14px; margin-bottom:10px; cursor:pointer;
+  }
+  .pay-option.selected{border-color:var(--ink); background:var(--paper-dim);}
+  .pay-badge{width:42px;height:30px;border-radius:7px; display:flex;align-items:center;justify-content:center; font-size:10px; font-weight:700; color:#fff; flex-shrink:0;}
+
+  .receipt{background:var(--paper-dim); border-radius:16px; padding:16px; margin-top:4px;}
+  .receipt .r-row{display:flex; justify-content:space-between; font-size:13.5px; padding:6px 0; color:#40342a;}
+  .receipt .r-row.total{border-top:1px solid var(--paper-line); margin-top:6px; padding-top:12px; font-weight:700; font-size:15px; color:var(--ink);}
+
+  /* ---------- success / tracking ---------- */
+  .success-wrap{display:flex; flex-direction:column; align-items:center; text-align:center; padding:50px 24px 20px;}
+  .success-ring{width:76px;height:76px;border-radius:50%; background:var(--moss); display:flex;align-items:center;justify-content:center; margin-bottom:20px;}
+  .success-ring svg{width:34px;height:34px; stroke:#fff; stroke-width:3;}
+  .success-wrap h2{font-size:21px; margin:0 0 8px;}
+  .success-wrap p{font-size:13.5px; color:#6b5f54; line-height:1.6; margin:0 0 26px; max-width:280px;}
+
+  .map-wrap{position:relative; height:230px; background:#E3D6BE; overflow:hidden; flex-shrink:0;}
+  .eta-card{
+    position:absolute; bottom:14px; left:14px; right:14px; background:#fff; border-radius:16px;
+    padding:12px 14px; display:flex; align-items:center; gap:12px; box-shadow:0 10px 24px rgba(36,20,10,0.16);
+  }
+  .eta-card .txt strong{display:block; font-size:14px;}
+  .eta-card .txt span{font-size:11.5px; color:#6b5f54;}
+  .round-icon-btn{width:38px;height:38px;border-radius:50%; border:1.5px solid var(--paper-line); background:#fff; display:flex;align-items:center;justify-content:center; cursor:pointer; flex-shrink:0;}
+  .round-icon-btn svg{width:16px;height:16px;}
+
+  .panic-zone{padding:18px; text-align:center; border-top:1px solid var(--paper-line); background:var(--paper);}
+  .panic-btn{
+    width:88px;height:88px;border-radius:50%; margin:0 auto 10px; position:relative; cursor:pointer;
+    background:var(--brick-pale); display:flex;align-items:center;justify-content:center;
+    -webkit-user-select:none; user-select:none; touch-action:none;
+  }
+  .panic-btn svg{width:30px;height:30px; stroke:var(--brick); position:relative; z-index:2;}
+  .panic-btn .ring{
+    position:absolute; inset:0; border-radius:50%;
+    background:conic-gradient(var(--brick) calc(var(--pct,0)*1%), transparent 0);
+    -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 6px), #000 calc(100% - 5px));
+    mask:radial-gradient(farthest-side, transparent calc(100% - 6px), #000 calc(100% - 5px));
+  }
+  .panic-zone p{font-size:12px; color:#6b5f54; margin:0;}
+
+  /* ---------- safety screen ---------- */
+  .verify-card{display:flex; align-items:center; gap:12px; padding:14px 4px; border-bottom:1px solid var(--paper-line);}
+  .verify-card .vi{width:36px;height:36px;border-radius:10px; display:flex;align-items:center;justify-content:center; flex-shrink:0;}
+  .verify-card .vi svg{width:17px;height:17px;}
+  .verify-card .txt{flex:1;}
+  .verify-card .txt strong{display:block; font-size:13.5px;}
+  .verify-card .txt span{font-size:11.5px; color:#6b5f54;}
+  .status-tag{font-size:10.5px; font-weight:700; padding:4px 9px; border-radius:99px; flex-shrink:0;}
+  .status-tag.done{background:var(--moss-pale); color:var(--moss);}
+  .status-tag.pending{background:#F5EAD2; color:#8A6A1E;}
+
+  .safety-tip{display:flex; gap:11px; padding:12px 4px; align-items:flex-start;}
+  .safety-tip svg{width:16px;height:16px; stroke:var(--plum); flex-shrink:0; margin-top:2px;}
+  .safety-tip p{margin:0; font-size:13px; line-height:1.5; color:#40342a;}
+
+  /* ---------- marketplace ---------- */
+  .prod-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+  .prod-card{border:1px solid var(--paper-line); border-radius:18px; padding:12px; cursor:pointer;}
+  .prod-card.sponsored{border-color:var(--amber); background:linear-gradient(180deg, rgba(217,164,65,0.08), transparent 40%); position:relative;}
+  .sponsored-tag{position:absolute; top:10px; right:10px; background:var(--amber); color:var(--amber-ink); font-size:9.5px; font-weight:700; padding:3px 8px; border-radius:99px; letter-spacing:.02em;}
+  .prod-thumb{height:88px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:10px;}
+  .prod-thumb svg{width:32px;height:32px;}
+  .prod-card h4{font-size:13px; font-weight:600; margin:0 0 3px; line-height:1.3;}
+  .prod-card .seller{font-size:11px; color:#6b5f54; margin:0 0 8px;}
+  .prod-card .bottom-row{display:flex; align-items:center; justify-content:space-between;}
+  .prod-card .price{font-family:'Fraunces',serif; font-weight:600; font-size:14px;}
+  .add-btn{width:28px;height:28px;border-radius:50%; background:var(--ink); border:none; display:flex;align-items:center;justify-content:center; cursor:pointer; flex-shrink:0;}
+  .add-btn svg{width:14px;height:14px; stroke:var(--paper);}
+  .add-btn.added{background:var(--moss);}
+
+  /* ---------- profile / dashboard ---------- */
+  .mode-toggle{display:flex; background:var(--paper-dim); border-radius:14px; padding:4px; margin-bottom:20px;}
+  .mode-toggle button{flex:1; border:none; background:none; padding:10px; border-radius:11px; font-size:13px; font-weight:600; color:#6b5f54; cursor:pointer;}
+  .mode-toggle button.active{background:var(--ink); color:var(--paper);}
+
+  .earn-card{background:var(--plum); color:#fff; border-radius:20px; padding:20px; margin-bottom:20px;}
+  .earn-card span{font-size:12px; color:rgba(255,255,255,0.7);}
+  .earn-card strong{display:block; font-family:'Fraunces',serif; font-size:32px; font-weight:600; margin:4px 0 14px;}
+  .bars{display:flex; align-items:flex-end; gap:7px; height:60px;}
+  .bars i{flex:1; background:rgba(255,255,255,0.85); border-radius:4px 4px 0 0;}
+
+  .insight-row{display:flex; gap:10px; margin-bottom:20px;}
+  .insight-box{flex:1; border:1px solid var(--paper-line); border-radius:16px; padding:14px;}
+  .insight-box strong{display:block; font-family:'Fraunces',serif; font-size:19px; font-weight:600;}
+  .insight-box span{font-size:11px; color:#6b5f54;}
+
+  .list-row{display:flex; align-items:center; justify-content:space-between; padding:14px 4px; border-bottom:1px solid var(--paper-line); cursor:pointer;}
+  .list-row .left{display:flex; align-items:center; gap:12px;}
+  .list-row .li-ico{width:36px;height:36px;border-radius:10px; background:var(--paper-dim); display:flex;align-items:center;justify-content:center;}
+  .list-row .li-ico svg{width:16px;height:16px; stroke:var(--ink);}
+  .list-row strong{font-size:13.5px; display:block;}
+  .list-row span{font-size:11.5px; color:#6b5f54;}
+  .list-row svg.chev{width:14px;height:14px; stroke:#a89a89;}
+
+  .booking-card{border:1px solid var(--paper-line); border-radius:18px; padding:16px; margin-bottom:14px; cursor:pointer;}
+  .booking-card .top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;}
+  .booking-card h4{margin:0; font-size:14.5px;}
+  .booking-card .when{font-size:12px; color:#6b5f54; margin-top:2px;}
+  .tag{font-size:10.5px; font-weight:700; padding:4px 9px; border-radius:99px;}
+  .tag.upcoming{background:var(--amber); color:var(--amber-ink);}
+  .tag.done{background:var(--paper-dim); color:#6b5f54;}
+
+  .empty-state{text-align:center; padding:60px 30px 30px; color:#6b5f54;}
+  .empty-state svg{width:38px;height:38px; stroke:#a89a89; margin-bottom:14px;}
+  .empty-state h3{font-size:15px; margin:0 0 6px; color:var(--ink);}
+  .empty-state p{font-size:13px; margin:0; line-height:1.5;}
+
+  /* ---------- overlay ---------- */
+  .overlay{
+    position:absolute; inset:0; background:rgba(23,17,13,0.55); z-index:40;
+    display:none; align-items:flex-end; justify-content:center;
+  }
+  .overlay.show{display:flex;}
+  .sheet{
+    background:var(--paper); width:100%; border-radius:24px 24px 0 0; padding:26px 22px calc(26px + env(safe-area-inset-bottom,0px));
+    text-align:center;
+  }
+  .sheet .ico{width:56px;height:56px;border-radius:50%; background:var(--brick-pale); display:flex;align-items:center;justify-content:center; margin:0 auto 16px;}
+  .sheet .ico svg{width:26px;height:26px; stroke:var(--brick);}
+  .sheet h3{font-size:17px; margin:0 0 8px;}
+  .sheet p{font-size:13px; color:#6b5f54; line-height:1.55; margin:0 0 20px;}
+
+  a{color:inherit;}
+
+  /* ---------- chat ---------- */
+  .chat-scroll{flex:1; overflow-y:auto; padding:16px 16px 10px; display:flex; flex-direction:column; gap:10px;}
+  .bubble{max-width:78%; padding:10px 13px; border-radius:16px; font-size:13.5px; line-height:1.45;}
+  .bubble.them{background:var(--paper-dim); align-self:flex-start; border-bottom-left-radius:4px;}
+  .bubble.me{background:var(--amber); color:var(--amber-ink); align-self:flex-end; border-bottom-right-radius:4px;}
+  .chat-input-bar{display:flex; gap:8px; padding:10px 14px calc(12px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--paper-line); background:var(--paper);}
+  .chat-input-bar input{flex:1; border:1.5px solid var(--paper-line); border-radius:99px; padding:11px 16px; font-family:inherit; font-size:13.5px; background:var(--paper);}
+  .chat-send{width:40px;height:40px;border-radius:50%; background:var(--ink); border:none; display:flex;align-items:center;justify-content:center; cursor:pointer; flex-shrink:0;}
+  .chat-send svg{width:16px;height:16px; stroke:var(--paper);}
+
+  /* ---------- expandable info ---------- */
+  .expand-card{border-bottom:1px solid var(--paper-line); padding:14px 4px;}
+  .expand-head{display:flex; align-items:center; justify-content:space-between; cursor:pointer;}
+  .expand-head strong{font-size:13.5px;}
+  .expand-head svg{width:14px;height:14px; stroke:#8a7d6d; transition:transform .15s ease;}
+  .expand-head.open svg{transform:rotate(180deg);}
+  .expand-body{font-size:12.5px; line-height:1.6; color:#40342a; max-height:0; overflow:hidden; transition:max-height .2s ease;}
+  .expand-body.open{max-height:260px; margin-top:8px;}
+
+  /* ---------- form sheet ---------- */
+  .sheet.form{text-align:left;}
+  .sheet.form .ico{display:none;}
+  .sheet-chip-row{display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;}
+  .sheet-chip{padding:8px 14px; border-radius:99px; border:1.5px solid var(--paper-line); font-size:12px; font-weight:600; cursor:pointer;}
+  .sheet-chip.selected{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+
+  /* ---------- payout receipt ---------- */
+  .payout-toggle{
+    display:flex; gap:4px; background:var(--paper-dim);
+    padding:4px; border-radius:14px; margin-bottom:16px;
+  }
+  .payout-toggle button{
+    flex:1; padding:10px 12px; border:none; border-radius:11px;
+    background:none; color:#6b5f54; font-family:inherit; font-size:13px;
+    font-weight:600; cursor:pointer;
+  }
+  .payout-toggle button.active{background:var(--ink); color:var(--paper);}
+  .payout-card{
+    background:var(--paper); border:1px solid var(--paper-line);
+    border-radius:18px; overflow:hidden;
+  }
+  .payout-head{
+    padding:18px 16px 16px; border-bottom:1px solid var(--paper-line);
+    background:var(--paper-dim);
+  }
+  .payout-eyebrow{
+    font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+    color:#6b5f54; font-weight:600; margin-bottom:6px;
+  }
+  .payout-hero{
+    font-family:'Fraunces',serif; font-size:32px; font-weight:600;
+    color:var(--moss); letter-spacing:-.02em; line-height:1.05;
+  }
+  .payout-hero-sub{font-size:13px; color:#6b5f54; margin-top:4px;}
+  .payout-status{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:12px; padding:5px 11px;
+    background:var(--moss-pale); border-radius:99px;
+    font-size:12px; color:var(--moss); font-weight:600;
+  }
+  .payout-status .dot{width:6px; height:6px; border-radius:50%; background:var(--moss);}
+  .payout-lines{padding:4px 0;}
+  .payout-line{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:11px 16px; gap:12px; font-size:13.5px;
+  }
+  .payout-line-label{color:#6b5f54;}
+  .payout-line-label .tag{
+    display:inline-block; margin-left:6px; padding:2px 7px;
+    font-size:10.5px; color:var(--moss); background:var(--moss-pale);
+    border-radius:99px; font-weight:700; vertical-align:1px;
+  }
+  .payout-line-val{font-weight:600; white-space:nowrap; color:var(--ink);}
+  .payout-line.neg .payout-line-val{color:var(--brick);}
+  .payout-line.sub{
+    padding-top:0; padding-bottom:12px;
+    border-bottom:1px solid var(--paper-line);
+  }
+  .payout-line.sub .payout-line-label,
+  .payout-line.sub .payout-line-val{color:#a89a89; font-size:12px; font-weight:400;}
+  .payout-divider-label{
+    padding:14px 16px 6px;
+    font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+    color:#6b5f54; font-weight:600;
+  }
+  .payout-total{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:14px 16px 16px; border-top:1px solid var(--paper-line); margin-top:4px;
+  }
+  .payout-total-label{font-weight:700; font-size:14.5px;}
+  .payout-total-val{
+    font-family:'Fraunces',serif; font-size:20px; font-weight:600; color:var(--ink);
+  }
+  .payout-note{
+    padding:0 16px 16px; font-size:12px; color:#8a7d6d; line-height:1.5;
+  }
+  .payout-note a{color:var(--amber-ink); font-weight:600; text-decoration:none;}
+  .payout-hidden{display:none !important;}
+</style>
+<style>* { cursor: crosshair !important; }</style><style>iframe, object, embed { pointer-events: none !important; }</style></head>
+<body>
+
+<div class="backdrop-label">SnipñDrip · a house-call hair, nail &amp; beauty platform, prototyped for mobile</div>
+
+<div class="phone" id="phone">
+<div class="notch"></div>
+
+<!-- ============ HOME ============ -->
+<div class="screen active" id="screen-home">
+  <div class="app-header">
+    <div class="row">
+      <div class="brand">
+        <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z" stroke-linejoin="round" stroke-linecap="round"></path></svg></div>
+        <span class="brand-name">SnipñDrip</span>
+      </div>
+      <button class="icon-btn" onclick="go('safety')"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z" stroke-linejoin="round"></path></svg></button>
+    </div>
+    <div class="loc-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
+      <span>Sending requests near Rosebank, Johannesburg</span>
+    </div>
+    <div class="search-bar">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3" stroke-linecap="round"></path></svg>
+      <span>Search braiders, barbers, nail techs…</span>
+    </div>
+  </div>
+
+  <div class="scroll">
+    <div class="section-head"><h2>What do you need done?</h2></div>
+    <div class="chip-row" id="cat-row">
+    <div class="cat-chip" onclick="pickHomeCat('Braids &amp; Locs')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M6 3c3 0 4 3 4 6s-1 8-4 8-4-2-4-4 1-3 3-3M18 3c-3 0-4 3-4 6s1 8 4 8 4-2 4-4-1-3-3-3" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Braids &amp; Locs</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Barbering')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M6 3l6 9-6 9M18 3l-6 9 6 9" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Barbering</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Wigs &amp; Weaves')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M12 3a7 7 0 00-7 7v8h4v-6a3 3 0 016 0v6h4v-8a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Wigs &amp; Weaves</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Colour')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M12 3v18M5 8l14 8M19 8L5 16" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Colour</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Bridal &amp; Events')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9L9.5 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Bridal &amp; Events</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Kids\' styles')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M12 2a4 4 0 014 4c0 2-4 6-4 6s-4-4-4-6a4 4 0 014-4zM6 22c0-4 2.7-6 6-6s6 2 6 6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Kids' styles</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Nails')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M9 3c0 5-2 6-2 11a5 5 0 0010 0c0-5-2-6-2-11" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Nails</span>
+    </div>
+    <div class="cat-chip" onclick="pickHomeCat('Makeup')">
+      <div class="ico" style=""><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="var(--plum)"><path d="M8 21l4-13 4 13M9 12h6M6 3l3 2M18 3l-3 2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <span>Makeup</span>
+    </div></div>
+
+    <div class="trust-banner">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z" stroke-linejoin="round"></path><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <div>
+        <strong>Every stylist is ID- and selfie-verified</strong>
+        <p>You'll always see a stylist's verification badge, real reviews, and live route before they arrive.</p>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>Verified near you</h2><a href="javascript:void(0)" onclick="activeHomeCat=null; renderCats(); renderStylistList();">See all</a></div>
+    <div id="stylist-list">
+    <div class="stylist-card" onclick="openStylist(1)">
+      <div class="avatar" style="background:#B9832A">NK</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Naledi K.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Braids &amp; Locs specialist</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.9</span><span>212 reviews</span><span>2.1 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R450</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(2)">
+      <div class="avatar" style="background:#4A2545">TM</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Thabo M.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Barbering &amp; fades</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.8</span><span>167 reviews</span><span>3.4 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R180</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(3)">
+      <div class="avatar" style="background:#5C6B4F">AP</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Amahle P.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Wig &amp; weave installs</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 5</span><span>98 reviews</span><span>1.6 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R600</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(4)">
+      <div class="avatar" style="background:#A33D2C">KR</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Kagiso R.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Colour &amp; silk press</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.7</span><span>145 reviews</span><span>4.0 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R350</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(5)">
+      <div class="avatar" style="background:#5C3B0F">ZD</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Zanele D.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Bridal &amp; event styling</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.9</span><span>76 reviews</span><span>5.2 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R900</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(6)">
+      <div class="avatar" style="background:#8A6A1E">NT</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Nomsa T.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Nail technician</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.9</span><span>134 reviews</span><span>2.8 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R180</strong></div>
+    </div>
+    <div class="stylist-card" onclick="openStylist(7)">
+      <div class="avatar" style="background:#A33D2C">KL</div>
+      <div class="s-info">
+        <div class="name-row"><h3>Karabo L.</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div></div>
+        <div class="spec">Makeup artist</div>
+        <div class="s-meta"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg> 4.8</span><span>109 reviews</span><span>3.6 km</span></div>
+      </div>
+      <div class="s-price">from<strong>R350</strong></div>
+    </div></div>
+  </div>
+
+  <div id="nav-home"><div class="bottom-nav">
+    <button class="nav-item active" onclick="goRoot('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 11l8-7 8 7M6 10v9h12v-9"></path></svg>
+      <span>Discover</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('bookings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg>
+      <span>Bookings</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('market')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+      <span>Shop</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('safety')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+      <span>Safety</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('profile')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg>
+      <span>Profile</span>
+    </button></div></div>
+</div>
+
+<!-- ============ BOOKINGS LIST ============ -->
+<div class="screen" id="screen-bookings">
+  <div class="app-header">
+    <div class="row"><span class="header-title">Your bookings</span><span style="width:36px"></span></div>
+  </div>
+  <div class="scroll" id="bookings-list"><div class="booking-card" onclick="renderTracking(0);
+updateAuthUI(); go('tracking')">
+      <div class="top">
+        <div><h4>Naledi K.</h4><div class="when">Today, 14:00</div></div>
+        <span class="tag upcoming">Upcoming</span>
+      </div>
+      <div class="s-meta" style="margin-top:0; margin-bottom:10px"><span>Knotless braids (medium)</span><span>R895</span></div>
+      <button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); openManage(0)">Manage booking</button>
+      
+    </div><div class="booking-card" onclick="openStylist(2)">
+      <div class="top">
+        <div><h4>Thabo M.</h4><div class="when">12 Sept, 10:30</div></div>
+        <span class="tag done">Completed</span>
+      </div>
+      <div class="s-meta" style="margin-top:0; margin-bottom:10px"><span>Skin fade</span><span>R180</span></div>
+      
+      <button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); rebook(1)">Rebook</button>
+    </div><div class="booking-card" onclick="openStylist(4)">
+      <div class="top">
+        <div><h4>Kagiso R.</h4><div class="when">2 Sept, 16:00</div></div>
+        <span class="tag done">Completed</span>
+      </div>
+      <div class="s-meta" style="margin-top:0; margin-bottom:10px"><span>Silk press</span><span>R400</span></div>
+      
+      <button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); rebook(2)">Rebook</button>
+    </div></div>
+  <div id="nav-bookings"><div class="bottom-nav">
+    <button class="nav-item " onclick="goRoot('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 11l8-7 8 7M6 10v9h12v-9"></path></svg>
+      <span>Discover</span>
+    </button>
+    <button class="nav-item active" onclick="goRoot('bookings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg>
+      <span>Bookings</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('market')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+      <span>Shop</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('safety')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+      <span>Safety</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('profile')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg>
+      <span>Profile</span>
+    </button></div></div>
+</div>
+
+<!-- ============ MARKETPLACE ============ -->
+<div class="screen" id="screen-market">
+  <div class="app-header">
+    <div class="row"><span class="header-title">Marketplace</span>
+      <div style="display:flex; gap:8px">
+        <button class="icon-btn" onclick="openAdvertise()" title="Advertise on SnipñDrip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 11v3a2 2 0 002 2h1l3 5V6L6 11H5a2 2 0 00-2 2z" stroke-linejoin="round"></path><path d="M14 8a4 4 0 010 8M18 5a8 8 0 010 14"></path></svg></button>
+        <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div>
+    <div class="search-bar" style="margin-top:14px">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3" stroke-linecap="round"></path></svg>
+      <input id="market-search" placeholder="Search hair, nail or makeup products…" oninput="searchMarket(this.value)" style="background:none; border:none; outline:none; color:var(--paper); font-family:inherit; font-size:13.5px; width:100%;">
+    </div>
+    <div class="chip-row" style="margin-top:14px" id="market-chip-row"><div class="cat-chip" style="width:auto;padding:0 4px" onclick="pickMarketCat('All')"><div class="ico" style="width:auto;height:auto;background:none;border:none;padding:9px 15px;border-radius:99px;border:1.5px solid rgba(251,243,231,0.9);background:var(--amber)"><span style="font-size:12.5px;font-weight:600;color:var(--amber-ink)">All</span></div></div><div class="cat-chip" style="width:auto;padding:0 4px" onclick="pickMarketCat('Hair')"><div class="ico" style="width:auto;height:auto;background:none;border:none;padding:9px 15px;border-radius:99px;border:1.5px solid rgba(251,243,231,0.25);background:transparent"><span style="font-size:12.5px;font-weight:600;color:rgba(251,243,231,0.8)">Hair</span></div></div><div class="cat-chip" style="width:auto;padding:0 4px" onclick="pickMarketCat('Nail')"><div class="ico" style="width:auto;height:auto;background:none;border:none;padding:9px 15px;border-radius:99px;border:1.5px solid rgba(251,243,231,0.25);background:transparent"><span style="font-size:12.5px;font-weight:600;color:rgba(251,243,231,0.8)">Nail</span></div></div><div class="cat-chip" style="width:auto;padding:0 4px" onclick="pickMarketCat('Makeup')"><div class="ico" style="width:auto;height:auto;background:none;border:none;padding:9px 15px;border-radius:99px;border:1.5px solid rgba(251,243,231,0.25);background:transparent"><span style="font-size:12.5px;font-weight:600;color:rgba(251,243,231,0.8)">Makeup</span></div></div></div>
+  </div>
+  <div class="scroll">
+    <p style="font-size:12.5px; color:#6b5f54; margin:0 0 14px;">Hair, nail and makeup products sold directly by verified artists — and select brand partners — on SnipñDrip.</p>
+    <div class="prod-grid" id="prod-grid" style="display: grid;"><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#EFE1EC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"></path></svg></div>
+      <h4>Curl-defining oil blend</h4>
+      <p class="seller">by Amahle P.</p>
+      <div class="bottom-row"><span class="price">R220</span>
+        <button class="add-btn" id="add-0" onclick="addToCart(0)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F1E3CE"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><rect x="6" y="8" width="12" height="12" rx="2"></rect><path d="M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg></div>
+      <h4>Handmade shea butter pomade</h4>
+      <p class="seller">by Naledi K.</p>
+      <div class="bottom-row"><span class="price">R150</span>
+        <button class="add-btn" id="add-1" onclick="addToCart(1)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#E7ECDF"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M4 5h16v3H4zM6 8v11M9 8v9M12 8v11M15 8v9M18 8v11"></path></svg></div>
+      <h4>Wide-tooth detangling comb</h4>
+      <p class="seller">by SnipñDrip Basics</p>
+      <div class="bottom-row"><span class="price">R65</span>
+        <button class="add-btn" id="add-2" onclick="addToCart(2)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#EFE1EC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M12 3a7 7 0 00-7 7v8h4v-6a3 3 0 016 0v6h4v-8a7 7 0 00-7-7z"></path></svg></div>
+      <h4>Human hair closure wig, 16"</h4>
+      <p class="seller">by Amahle P.</p>
+      <div class="bottom-row"><span class="price">R2400</span>
+        <button class="add-btn" id="add-3" onclick="addToCart(3)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F1E3CE"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><rect x="6" y="8" width="12" height="12" rx="2"></rect><path d="M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg></div>
+      <h4>Edge control gel</h4>
+      <p class="seller">by SnipñDrip Basics</p>
+      <div class="bottom-row"><span class="price">R95</span>
+        <button class="add-btn" id="add-4" onclick="addToCart(4)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F5E1DC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M4 15a8 8 0 0116 0z"></path><path d="M3 15h18"></path></svg></div>
+      <h4>Satin bonnet, double-lined</h4>
+      <p class="seller">by Kagiso R.</p>
+      <div class="bottom-row"><span class="price">R110</span>
+        <button class="add-btn" id="add-5" onclick="addToCart(5)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F5E1DC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M10 3h4v3.5l2 2.5V19a2 2 0 01-2 2h-4a2 2 0 01-2-2V9l2-2.5V3z"></path><path d="M9 12h6"></path></svg></div>
+      <h4>Long-wear gel polish set</h4>
+      <p class="seller">by Nomsa T.</p>
+      <div class="bottom-row"><span class="price">R260</span>
+        <button class="add-btn" id="add-6" onclick="addToCart(6)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F5E1DC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M10 3h4v3.5l2 2.5V19a2 2 0 01-2 2h-4a2 2 0 01-2-2V9l2-2.5V3z"></path><path d="M9 12h6"></path></svg></div>
+      <h4>Cuticle oil pen</h4>
+      <p class="seller">by Nomsa T.</p>
+      <div class="bottom-row"><span class="price">R70</span>
+        <button class="add-btn" id="add-7" onclick="addToCart(7)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#F1E3CE"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><rect x="9" y="9" width="6" height="12" rx="1.2"></rect><path d="M11 9V5h2v4M9 5h4M13 3l2 2M15.5 4.5l1.2-1.2"></path></svg></div>
+      <h4>24h setting spray</h4>
+      <p class="seller">by Karabo L.</p>
+      <div class="bottom-row"><span class="price">R180</span>
+        <button class="add-btn" id="add-8" onclick="addToCart(8)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card ">
+      
+      <div class="prod-thumb" style="background:#EFE1EC"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M16 2l6 6-9 9-6-6 9-9z"></path><path d="M7 12L3 21l9-4"></path></svg></div>
+      <h4>Everyday glam brush set</h4>
+      <p class="seller">by Karabo L.</p>
+      <div class="bottom-row"><span class="price">R340</span>
+        <button class="add-btn" id="add-9" onclick="addToCart(9)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div><div class="prod-card sponsored">
+      <span class="sponsored-tag">Sponsored</span>
+      <div class="prod-thumb" style="background:#F1E3CE"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"></path></svg></div>
+      <h4>Argan repair treatment</h4>
+      <p class="seller">by SilkRoot (brand partner)</p>
+      <div class="bottom-row"><span class="price">R245</span>
+        <button class="add-btn" id="add-10" onclick="addToCart(10)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div></div>
+  </div>
+  <div id="nav-market"><div class="bottom-nav">
+    <button class="nav-item " onclick="goRoot('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 11l8-7 8 7M6 10v9h12v-9"></path></svg>
+      <span>Discover</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('bookings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg>
+      <span>Bookings</span>
+    </button>
+    <button class="nav-item active" onclick="goRoot('market')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+      <span>Shop</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('safety')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+      <span>Safety</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('profile')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg>
+      <span>Profile</span>
+    </button></div></div>
+</div>
+
+<!-- ============ SAFETY ============ -->
+<div class="screen" id="screen-safety">
+  <div class="app-header">
+    <div class="row"><span class="header-title">Safety centre</span><span style="width:36px"></span></div>
+  </div>
+  <div class="scroll">
+    <div class="section-head" style="margin-top:2px"><h2>Your verification</h2></div>
+    <div class="verify-card">
+      <div class="vi" style="background:var(--moss-pale)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+      <div class="txt"><strong>Government ID</strong><span>Matched to your profile name</span></div>
+      <div class="status-tag done">Verified</div>
+    </div>
+    <div class="verify-card">
+      <div class="vi" style="background:var(--moss-pale)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="2"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6" stroke-linecap="round"></path></svg></div>
+      <div class="txt"><strong>Selfie match</strong><span>Confirms the person arriving is who you booked</span></div>
+      <div class="status-tag done">Verified</div>
+    </div>
+    <div class="verify-card">
+      <div class="vi" style="background:#F5EAD2"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A1E" stroke-width="2"><path d="M12 8v5l3 2"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+      <div class="txt"><strong>Background screening</strong><span>Independent check, refreshed yearly</span></div>
+      <div class="status-tag pending">In progress</div>
+    </div>
+
+    <div class="expand-card">
+      <div class="expand-head" id="popia-head" onclick="toggleExpand('popia')"><strong>Your data &amp; POPIA</strong><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg></div>
+      <div class="expand-body" id="popia-body">We collect your ID document, a selfie, and location only to verify identity and coordinate a booking safely. It's encrypted at rest, never sold, and only shared with your matched stylist or customer once a booking is confirmed. In line with South Africa's Protection of Personal Information Act (POPIA), you can request a copy of what we hold or ask us to delete it from your Profile at any time.</div>
+    </div>
+
+    <div class="section-head"><h2>While a stylist is with you</h2></div>
+    <div class="safety-tip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"></path><circle cx="12" cy="9" r="2.4"></circle></svg><p>Your live route is shared with a trusted contact automatically once a booking is confirmed.</p></div>
+    <div class="safety-tip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4l3 2" stroke-linecap="round"></path></svg><p>Every booking is timestamped — arrival, start and finish — so there's a clear record if something feels off.</p></div>
+    <div class="safety-tip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg><p>Ratings and written reviews are shown in full — nothing is filtered or hidden from either side.</p></div>
+
+    <div class="section-head"><h2>Need help with something else?</h2></div>
+    <div class="list-row" onclick="openSupport('safety')"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg></div><div><strong>Message support</strong><span>Get help from a real person</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+    <div class="list-row" onclick="openSupport('report')"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 9v4M12 17h.01"></path><path d="M10.3 3.9L2.5 18a2 2 0 001.8 3h15.4a2 2 0 001.8-3L13.7 3.9a2 2 0 00-3.4 0z"></path></svg></div><div><strong>Report a stylist or customer</strong><span>Reviewed by our trust &amp; safety team within 24h</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+
+    <div class="section-head"><h2>In an emergency</h2></div>
+    <p style="font-size:12.5px; color:#6b5f54; margin:0 0 6px;">Press and hold the button for two seconds to alert your emergency contact and SnipñDrip's safety team with your live location.</p>
+  </div>
+  <div class="panic-zone">
+    <div class="panic-btn" id="panic-btn">
+      <div class="ring" id="panic-ring"></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 9v4M12 17h.01"></path><path d="M10.3 3.9L2.5 18a2 2 0 001.8 3h15.4a2 2 0 001.8-3L13.7 3.9a2 2 0 00-3.4 0z" stroke-linejoin="round"></path></svg>
+    </div>
+    <p>Hold for help</p>
+  </div>
+  <div id="nav-safety"><div class="bottom-nav">
+    <button class="nav-item " onclick="goRoot('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 11l8-7 8 7M6 10v9h12v-9"></path></svg>
+      <span>Discover</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('bookings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg>
+      <span>Bookings</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('market')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+      <span>Shop</span>
+    </button>
+    <button class="nav-item active" onclick="goRoot('safety')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+      <span>Safety</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('profile')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg>
+      <span>Profile</span>
+    </button></div></div>
+</div>
+
+<!-- ============ PROFILE ============ -->
+<div class="screen" id="screen-profile">
+  <div class="app-header">
+    <div class="row"><span class="header-title">Profile</span><span style="width:36px"></span></div>
+  </div>
+  <div class="scroll">
+    <div class="mode-toggle">
+      <button id="mode-customer" class="active" onclick="setMode('customer')">Booking as customer</button>
+      <button id="mode-stylist" onclick="setMode('stylist')">Working as stylist</button>
+    </div>
+
+    <div id="profile-customer">
+      <div class="list-row" id="auth-profile-row" onclick="openAuth()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg></div><div><strong>Sign in with phone</strong><span>OTP · no password</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"></path></svg></div><div><strong>Saved addresses</strong><span>Home, work</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="14" rx="2"></rect><path d="M4 9h16"></path></svg></div><div><strong>Payment methods</strong><span>Ozow, PayFast, Visa •• 4471</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20 12a8 8 0 11-3-6.2"></path><path d="M20 4v5h-5"></path></svg></div><div><strong>Give a friend R100 off</strong><span>Referral code: BOI-4K21</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+    </div>
+
+    <div id="profile-stylist" style="display:none">
+      <div class="earn-card">
+        <span>Earnings this month</span>
+        <strong>R 8,240</strong>
+        <div class="bars" id="earn-bars"><i style="height:30%"></i><i style="height:55%"></i><i style="height:40%"></i><i style="height:70%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:60%"></i></div>
+      </div>
+      <div class="insight-row">
+        <div class="insight-box"><strong>26</strong><span>Bookings this month</span></div>
+        <div class="insight-box"><strong>4.9</strong><span>Average rating</span></div>
+      </div>
+      <div class="insight-row">
+        <div class="insight-box"><strong>92%</strong><span>Rebooking rate</span></div>
+        <div class="insight-box"><strong>3</strong><span>New this week</span></div>
+      </div>
+      <div class="list-row" onclick="openSchedule()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg></div><div><strong>Manage your schedule</strong><span>Set the hours you take house calls</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row" onclick="openAdvertise()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 11v3a2 2 0 002 2h1l3 5V6L6 11H5a2 2 0 00-2 2z"></path><path d="M14 8a4 4 0 010 8M18 5a8 8 0 010 14"></path></svg></div><div><strong>Advertise your business</strong><span>Get featured placement on Discover and Marketplace</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row" onclick="openInvoices()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19h16M4 15l4-5 4 3 4-7 4 4"></path></svg></div><div><strong>Invoices &amp; tax summary</strong><span>Monthly statements and provisional-tax estimate</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row" onclick="openSupport('report-customer')"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 9v4M12 17h.01"></path><path d="M10.3 3.9L2.5 18a2 2 0 001.8 3h15.4a2 2 0 001.8-3L13.7 3.9a2 2 0 00-3.4 0z"></path></svg></div><div><strong>Report a customer</strong><span>Flag a no-show or unsafe situation</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row" onclick="openTutorials()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19V10M12 19V4M20 19v-7"></path></svg></div><div><strong>Teach a technique</strong><span>Sell a tutorial to other stylists</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+      <div class="list-row" onclick="openInviteStylist()"><div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20 12a8 8 0 11-3-6.2"></path><path d="M20 4v5h-5"></path></svg></div><div><strong>Invite a stylist, earn R100</strong><span>Your code: SNIP-STY-882</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg></div>
+    </div>
+  </div>
+  <div id="nav-profile"><div class="bottom-nav">
+    <button class="nav-item " onclick="goRoot('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 11l8-7 8 7M6 10v9h12v-9"></path></svg>
+      <span>Discover</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('bookings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg>
+      <span>Bookings</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('market')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"></path><path d="M9 7a3 3 0 016 0"></path></svg>
+      <span>Shop</span>
+    </button>
+    <button class="nav-item " onclick="goRoot('safety')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+      <span>Safety</span>
+    </button>
+    <button class="nav-item active" onclick="goRoot('profile')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"></path></svg>
+      <span>Profile</span>
+    </button></div></div>
+</div>
+
+<!-- ============ STYLIST PROFILE (detail) ============ -->
+<div class="screen" id="screen-stylist">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Stylist profile</span>
+  </div>
+  <div class="scroll" id="stylist-detail" style="padding-bottom:110px">
+    <div class="stylist-hero">
+      <div class="avatar lg" style="background:#B9832A">NK</div>
+      <h2>Naledi K.</h2>
+      <div class="spec">Braids &amp; Locs specialist · 2.1 km away</div>
+      <div class="stat-row">
+        <div class="stat"><strong>4.9</strong><span>212 reviews</span></div>
+        <div class="stat"><strong>4</strong><span>services</span></div>
+        <div class="stat"><strong>R450+</strong><span>starting from</span></div>
+      </div>
+    </div>
+    <div style="padding:18px 14px 0">
+      <div class="section-head" style="margin-top:0"><h2>About</h2></div>
+      <p style="font-size:13.5px; line-height:1.6; color:#40342a; margin:0 0 6px">Nine years braiding in Johannesburg. Naledi specialises in knotless styles that protect the hairline and last up to six weeks.</p>
+      <div class="section-head"><h2>Portfolio</h2></div>
+      <div class="portfolio-grid"><div class="swatch pat-braid"></div><div class="swatch pat-locs"></div><div class="swatch pat-braid"></div><div class="swatch pat-curl"></div><div class="swatch pat-braid"></div><div class="swatch pat-locs"></div></div>
+      <div class="section-head"><h2>Services &amp; pricing</h2></div>
+      <div><div class="service-row"><div class="info"><span class="txt"><strong>Knotless braids (medium)</strong><span>3h 30m</span></span></div><span class="price">R895</span></div><div class="service-row"><div class="info"><span class="txt"><strong>Box braids (large)</strong><span>2h 15m</span></span></div><span class="price">R650</span></div><div class="service-row"><div class="info"><span class="txt"><strong>Cornrows, kids</strong><span>1h</span></span></div><span class="price">R300</span></div><div class="service-row"><div class="info"><span class="txt"><strong>Loc retwist</strong><span>1h 30m</span></span></div><span class="price">R420</span></div></div>
+      <p style="font-size:11.5px; color:#8a7d6d; margin:8px 0 0">Final price adjusts for travel distance and same-day urgency, shown before you pay.</p>
+      <div class="section-head"><h2>Reviews</h2></div>
+      <p style="font-size:11.5px; color:#8a7d6d; margin:-4px 0 6px">Reviews can only be left after a completed, verified booking — one per booking, so they reflect real appointments.</p>
+      <div><div class="review"><div class="top"><div class="avatar sm" style="background:#ccc; color:#40342a">B</div><strong style="flex:1">Boitumelo, verified customer</strong><a href="javascript:void(0)" style="font-size:11px; color:#a89a89" onclick="openSupport('review')">Report</a></div><div class="stars-sm" style="margin-bottom:6px"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg></div><p>Naledi arrived on time and my knotless braids lasted six weeks. Seeing her route on the way over made the whole thing feel safe.</p></div><div class="review"><div class="top"><div class="avatar sm" style="background:#ccc; color:#40342a">R</div><strong style="flex:1">Refilwe, verified customer</strong><a href="javascript:void(0)" style="font-size:11px; color:#a89a89" onclick="openSupport('review')">Report</a></div><div class="stars-sm" style="margin-bottom:6px"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"></path></svg></div><p>First house call I have booked and it will not be the last. Gentle with my daughter and the price matched the quote exactly.</p></div></div>
+      <div style="height:10px"></div>
+    </div></div>
+  <div class="sticky-cta" style="display:flex; gap:10px; background:linear-gradient(to top, var(--paper) 75%, transparent)">
+    <button class="btn btn-ghost" style="flex:0 0 auto; width:52px; padding:14px 0" onclick="openChat(activeStylist.id)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" width="18" height="18"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg></button>
+    <button class="btn btn-primary" onclick="startBooking()">Book a house call</button>
+  </div>
+</div>
+
+<!-- ============ BOOKING FLOW ============ -->
+<div class="screen" id="screen-booking">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="bookingBack()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Book a house call</span>
+  </div>
+  <div class="steps-dots" id="steps-dots"><i class="done"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+  <div class="scroll" id="booking-body" style="padding-bottom:110px"><div class="step-title">Choose a service</div><p class="step-sub">with Naledi K.</p>
+      <div><div class="service-row selected" onclick="pickService(0)"><div class="info"><div class="radio"></div><span class="txt"><strong>Knotless braids (medium)</strong><span>3h 30m</span></span></div><span class="price">R895</span></div><div class="service-row " onclick="pickService(1)"><div class="info"><div class="radio"></div><span class="txt"><strong>Box braids (large)</strong><span>2h 15m</span></span></div><span class="price">R650</span></div><div class="service-row " onclick="pickService(2)"><div class="info"><div class="radio"></div><span class="txt"><strong>Cornrows, kids</strong><span>1h</span></span></div><span class="price">R300</span></div><div class="service-row " onclick="pickService(3)"><div class="info"><div class="radio"></div><span class="txt"><strong>Loc retwist</strong><span>1h 30m</span></span></div><span class="price">R420</span></div></div>
+      
+      <div class="urgency-toggle">
+        <div class="txt"><strong>Booking for more than one person?</strong><span>Great for bridal parties or families — travel fee is only charged once</span></div>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:center; gap:18px; margin-top:10px;">
+        <button class="round-icon-btn" onclick="setPeople(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2.2"><path d="M5 12h14" stroke-linecap="round"></path></svg></button>
+        <strong style="font-family:'Fraunces',serif; font-size:20px; min-width:24px; text-align:center">1</strong>
+        <button class="round-icon-btn" onclick="setPeople(1)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"></path></svg></button>
+      </div>
+      <div class="urgency-toggle" style="margin-top:16px">
+        <div class="txt"><strong>Need it today?</strong><span>Adds a R100 urgency fee</span></div>
+        <div class="switch " onclick="toggleUrgent()"></div>
+      </div>
+      <div class="section-head"><h2 style="font-size:14px">Make this a repeat booking?</h2></div>
+      <div class="time-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="time-chip selected" onclick="setRecurring('none')">One-time</div><div class="time-chip " onclick="setRecurring('2w')">Every 2 wks</div><div class="time-chip " onclick="setRecurring('4w')">Every 4 wks</div>
+      </div></div>
+  <div class="sticky-cta"><button class="btn btn-primary" id="booking-next" onclick="bookingNext()">Continue</button></div>
+</div>
+
+<!-- ============ SUCCESS ============ -->
+<div class="screen" id="screen-success">
+  <div class="scroll no-nav-pad" style="padding-top:0">
+    <div class="success-wrap">
+      <div class="success-ring"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <h2>Booking confirmed</h2>
+      <p>Naledi K. will arrive on the date and time you chose. You'll be able to watch her route once she's on the way.</p>
+      <button class="btn btn-primary" style="margin-bottom:12px" onclick="renderTracking(0); go('tracking')">Track this booking</button>
+      <button class="btn btn-ghost" onclick="goRoot('home')">Back to home</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRACKING ============ -->
+<div class="screen" id="screen-tracking">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title" id="track-title">Naledi is on her way</span>
+  </div>
+  <div class="scroll no-nav-pad" style="padding:0">
+    <div class="map-wrap">
+      <svg width="100%" height="100%" viewBox="0 0 390 230" preserveAspectRatio="xMidYMid slice">
+        <rect width="390" height="230" fill="#E3D6BE"></rect>
+        <path d="M-10 190 C 80 150, 140 210, 220 140 S 340 60, 410 90" stroke="#C9B79A" stroke-width="14" fill="none"></path>
+        <path d="M-10 190 C 80 150, 140 210, 220 140 S 340 60, 410 90" stroke="#F5EAD2" stroke-width="2.5" stroke-dasharray="8 8" fill="none"></path>
+        <path d="M40 40 L120 40 M40 60 L100 60 M280 170 L360 170 M290 190 L340 190" stroke="#D6C6A6" stroke-width="10" stroke-linecap="round"></path>
+        <circle cx="360" cy="88" r="9" fill="#4A2545"></circle>
+        <circle cx="360" cy="88" r="14" fill="none" stroke="#4A2545" stroke-width="1.5" opacity="0.4"></circle>
+        <circle r="8" fill="#D9A441" stroke="#5C3B0F" stroke-width="2">
+          <animatemotion dur="14s" repeatCount="indefinite" path="M-10 190 C 80 150, 140 210, 220 140 S 340 60, 410 90"></animatemotion>
+        </circle>
+      </svg>
+      <div class="eta-card">
+        <div class="avatar sm" id="track-avatar" style="background:#B9832A">NK</div>
+        <div class="txt" style="flex:1"><strong id="track-name-eta">Naledi K. · arriving in <span id="eta-min">1</span> min</strong><span id="track-service-addr">Knotless braids (medium) · 24 Bolton Rd, Rosebank</span></div>
+        <button class="round-icon-btn" onclick="openChat(trackingStylistId)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2"><path d="M4 4h16v13H7l-3 3V4z"></path></svg></button>
+        <button class="round-icon-btn" onclick="openManage(trackingBookingIdx)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16"></path></svg></button>
+      </div>
+    </div>
+    <div style="padding:18px;">
+      <div class="section-head" style="margin-top:0"><h2>Booking details</h2></div>
+      <div class="receipt">
+        <div class="r-row"><span>Service</span><span id="track-service">Knotless braids (medium)</span></div>
+        <div class="r-row"><span>Date &amp; time</span><span id="track-when">Today, 14:00</span></div>
+        <div class="r-row"><span>Address</span><span id="track-address">24 Bolton Rd, Rosebank</span></div>
+        <div class="r-row total"><span>Total paid</span><span id="track-total">R 895</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="panic-zone">
+    <div class="panic-btn" id="panic-btn-2">
+      <div class="ring" id="panic-ring-2"></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 9v4M12 17h.01"></path><path d="M10.3 3.9L2.5 18a2 2 0 001.8 3h15.4a2 2 0 001.8-3L13.7 3.9a2 2 0 00-3.4 0z" stroke-linejoin="round"></path></svg>
+    </div>
+    <p>Hold for help</p>
+  </div>
+</div>
+
+<!-- ============ CHAT ============ -->
+<div class="screen" id="screen-chat">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <div class="avatar sm" id="chat-avatar" style="background:#B9832A">NK</div>
+    <span class="header-title" id="chat-name">Naledi K.</span>
+  </div>
+  <div class="chat-scroll" id="chat-messages"></div>
+  <div class="chat-input-bar">
+    <input id="chat-input" placeholder="Ask about availability, hair length…" onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-send" onclick="sendChat()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-linejoin="round"></path></svg></button>
+  </div>
+</div>
+
+<!-- ============ STYLIST INVOICES / TAX ============ -->
+<div class="screen" id="screen-invoices">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Invoices &amp; tax summary</span>
+  </div>
+  <div class="scroll" id="invoices-body"></div>
+</div>
+
+<!-- ============ PAYOUT RECEIPT ============ -->
+<div class="screen" id="screen-payout">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Payout detail</span>
+  </div>
+  <div class="scroll no-nav-pad" id="payout-body" style="padding-top:14px"></div>
+</div>
+
+<!-- ============ STYLIST SCHEDULE ============ -->
+<div class="screen" id="screen-schedule">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Your schedule</span>
+  </div>
+  <div class="scroll no-nav-pad" id="schedule-body" style="padding-top:14px"></div>
+</div>
+
+<!-- ============ TEACH / TUTORIALS ============ -->
+<div class="screen" id="screen-tutorials">
+  <div class="detail-header">
+    <button class="icon-btn back" onclick="back()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <span class="header-title">Teach a technique</span>
+  </div>
+  <div class="scroll no-nav-pad" id="tutorials-body" style="padding-top:14px"></div>
+</div>
+
+<!-- ============ MANAGE BOOKING OVERLAY (cancel / reschedule) ============ -->
+<div class="overlay" id="manage-overlay">
+  <div class="sheet" id="manage-sheet-content"></div>
+</div>
+
+<!-- ============ SUPPORT / REPORT OVERLAY ============ -->
+<div class="overlay" id="support-overlay">
+  <div class="sheet form" id="support-sheet-content"></div>
+</div>
+
+<!-- ============ PANIC OVERLAY ============ -->
+<div class="overlay" id="panic-overlay">
+  <div class="sheet" id="panic-sheet">
+    <div class="ico" id="panic-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+    <h3 id="panic-title">Sending alert…</h3>
+    <p id="panic-body">Reaching your emergency contact and SnipñDrip's safety team.</p>
+    <div id="panic-actions" style="display:none">
+      <button class="btn btn-plum" style="margin-bottom:10px" onclick="closePanic()">I'm safe, cancel alert</button>
+      <button class="btn btn-ghost" onclick="closePanic()">Keep alert active</button>
+    </div>
+    <div id="panic-fallback" style="display:none">
+      <a class="btn btn-plum" style="margin-bottom:10px; display:block; text-align:center; text-decoration:none" href="tel:10111">Call SAPS — 10111</a>
+      <a class="btn btn-ghost" style="margin-bottom:10px; display:block; text-align:center; text-decoration:none" href="tel:10177">Ambulance — 10177</a>
+      <button class="btn btn-ghost" onclick="closePanic()">Close</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============ AUTH / OTP ============ -->
+<div class="overlay" id="auth-overlay">
+  <div class="sheet form" id="auth-sheet">
+    <h3 style="text-align:center">Sign in with phone</h3>
+    <p style="text-align:center; font-size:13px; color:#6b5f54; margin:0 0 14px">We'll text you a 6-digit code. SA numbers work with 0… or +27…</p>
+    <div id="auth-step-phone">
+      <div class="field"><label>Mobile number</label><input id="auth-phone" type="tel" placeholder="082 123 4567" inputmode="tel"></div>
+      <button class="btn btn-primary" style="margin-bottom:10px" onclick="requestAuthOtp()">Send code</button>
+      <button class="btn btn-ghost" onclick="closeAuth()">Not now</button>
+    </div>
+    <div id="auth-step-code" style="display:none">
+      <div class="field"><label>Code sent to <span id="auth-phone-label"></span></label><input id="auth-code" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit code"></div>
+      <p id="auth-demo-hint" style="font-size:12px; color:var(--moss); margin:0 0 12px; display:none"></p>
+      <button class="btn btn-primary" style="margin-bottom:10px" onclick="verifyAuthOtp()">Verify &amp; sign in</button>
+      <button class="btn btn-ghost" onclick="backToPhoneStep()">Use a different number</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- /phone -->
+
+<script>
+/* ========================================================================
+   API client — talks to snipndrip-server OR in-browser mock (same contracts)
+   localStorage.SNIPDRIP_API_BASE = 'http://localhost:8787' to use the Node server
+   Empty / unset → offline mock so the prototype always works
+   ======================================================================== */
+const SNIPDRIP_API_BASE = (typeof localStorage !== 'undefined' && localStorage.getItem('SNIPDRIP_API_BASE')) || '';
+
+function randsFromCents(cents){ return (Number(cents) / 100).toFixed(2); }
+function formatRandCents(cents){ return 'R' + randsFromCents(cents); }
+
+const SnipMock = (() => {
+  const COMMISSION_BPS = 1500;
+  const store = {
+    payouts: {
+      'po-seed-1': {
+        id:'po-seed-1', kind:'stylist', amount_cents:80575, commission_cents:13425,
+        breakdown:{ customer_paid_cents:94000, service_or_product_cents:89500, pass_through_cents:4500, urgency_cents:0, commission_cents:13425, commission_rate_bps:1500 },
+        status:'paid', paid_at:'2025-09-22T14:32:00+02:00', paid_at_label:'Paid out 22 Sept, 14:32',
+        headline:'Knotless braids · Naledi M. · 22 Sept',
+        display:{ amount:'R805.75', customer_paid:'R940.00', service:'R895.00', pass_through:'R45.00', commission:'− R134.25', commission_pct:'15', pass_through_label:'Travel fee', commissioned_label:'service' }
+      },
+      'po-seed-shop': {
+        id:'po-seed-shop', kind:'shop', amount_cents:34800, commission_cents:3200,
+        breakdown:{ customer_paid_cents:38000, service_or_product_cents:32000, pass_through_cents:6000, urgency_cents:0, commission_cents:3200, commission_rate_bps:1000 },
+        status:'paid', paid_at:'2025-09-23T09:10:00+02:00', paid_at_label:'Paid out 23 Sept, 09:10',
+        headline:'Order #4821 · 3 items · 22 Sept',
+        display:{ amount:'R348.00', customer_paid:'R380.00', service:'R320.00', pass_through:'R60.00', commission:'− R32.00', commission_pct:'10', pass_through_label:'Delivery fee', commissioned_label:'products' }
+      }
+    },
+    bookings: {}
+  };
+  function issueToken(q){
+    const payload = Object.assign({}, q, { exp: Date.now() + 600000 });
+    return btoa(unescape(encodeURIComponent(JSON.stringify(payload)))) + '.mock';
+  }
+  function verifyToken(t){
+    if(!t || !String(t).endsWith('.mock')) throw Object.assign(new Error('invalid_quote_token'),{status:400});
+    const p = JSON.parse(decodeURIComponent(escape(atob(t.split('.')[0]))));
+    if(Date.now() > p.exp) throw Object.assign(new Error('quote_expired'),{status:400});
+    return p;
+  }
+  return {
+    async quote(body){
+      const priceRands = body._price_rands != null ? body._price_rands : 895;
+      const people = Math.max(1, Math.min(10, body.people_count || 1));
+      const service_subtotal_cents = Math.round(priceRands * 100) * people;
+      const km = body._km != null ? body._km : 8.5;
+      const travel_fee_cents = Math.round((body._travel_rands != null ? body._travel_rands : 45) * 100);
+      const urgency_fee_cents = body.urgent ? 10000 : 0;
+      const commission_cents = Math.round(service_subtotal_cents * COMMISSION_BPS / 10000);
+      const total_cents = service_subtotal_cents + travel_fee_cents + urgency_fee_cents;
+      const quote = {
+        stylist_id: body.stylist_id || 'u-naledi',
+        service_id: body.service_id || 'svc-knotless',
+        service_name: body._service_name || 'Service',
+        service_price_cents: Math.round(priceRands * 100),
+        duration_min: body._duration_min || 180,
+        people_count: people, urgent: !!body.urgent,
+        address: body.address || { lat:-26.1465, lng:28.0435, line1:'24 Bolton Rd', city:'Johannesburg' },
+        travel_distance_km: km,
+        travel_duration_min: Math.max(8, Math.round(km * 2.8 + 6)),
+        travel_fee_cents, urgency_fee_cents, service_subtotal_cents,
+        commission_rate_bps: COMMISSION_BPS, commission_cents, total_cents,
+        stylist_payout_cents: total_cents - commission_cents
+      };
+      quote.quote_token = issueToken(quote);
+      return quote;
+    },
+    async createBooking(body){
+      const claimed = verifyToken(body.quote_token);
+      const truth = await this.quote({
+        stylist_id: claimed.stylist_id, service_id: claimed.service_id,
+        people_count: claimed.people_count, urgent: claimed.urgent, address: claimed.address,
+        _price_rands: claimed.service_price_cents / 100,
+        _travel_rands: claimed.travel_fee_cents / 100,
+        _km: claimed.travel_distance_km,
+        _service_name: claimed.service_name, _duration_min: claimed.duration_min
+      });
+      ['total_cents','commission_cents','travel_fee_cents','service_subtotal_cents'].forEach(k=>{
+        if(claimed[k] !== truth[k]) throw Object.assign(new Error('quote_mismatch'),{status:400});
+      });
+      const id = 'bk-' + Date.now();
+      const booking = { id, status:'pending', total_cents: truth.total_cents, stylist_payout_cents: truth.stylist_payout_cents, service_name_snapshot: truth.service_name };
+      store.bookings[id] = booking;
+      const payoutId = 'po-' + Date.now();
+      store.payouts[payoutId] = {
+        id: payoutId, kind:'stylist', amount_cents: truth.stylist_payout_cents, commission_cents: truth.commission_cents,
+        breakdown:{ customer_paid_cents: truth.total_cents, service_or_product_cents: truth.service_subtotal_cents, pass_through_cents: truth.travel_fee_cents, urgency_cents: truth.urgency_fee_cents, commission_cents: truth.commission_cents, commission_rate_bps: truth.commission_rate_bps },
+        status:'pending', paid_at:null, paid_at_label:'Pending payout', headline: truth.service_name,
+        display:{ amount: formatRandCents(truth.stylist_payout_cents), customer_paid: formatRandCents(truth.total_cents), service: formatRandCents(truth.service_subtotal_cents), pass_through: formatRandCents(truth.travel_fee_cents), commission: '− ' + formatRandCents(truth.commission_cents), commission_pct:'15', pass_through_label:'Travel fee', commissioned_label:'service' }
+      };
+      return { booking, payout_id: payoutId };
+    },
+    async getPayout(id){
+      const p = store.payouts[id];
+      if(!p) throw Object.assign(new Error('payout_not_found'),{status:404});
+      return p;
+    },
+    async listPayouts(){ return { items: Object.values(store.payouts) }; },
+    async panic({ lat, lng }){
+      if(lat == null || lng == null) throw Object.assign(new Error('lat_lng_required'),{status:400});
+      await new Promise(r => setTimeout(r, 400));
+      return { event_id: 'panic-' + Date.now(), dispatched_to:['emergency_contact','safety_team'], status:'triggered' };
+    }
+  };
+})();
+
+async function snipFetch(path, opts){
+  opts = opts || {};
+  const method = (opts.method || 'GET').toUpperCase();
+  const body = opts.body;
+  if(!SNIPDRIP_API_BASE){
+    if(path === '/bookings/quote' && method === 'POST') return SnipMock.quote(body);
+    if(path === '/bookings' && method === 'POST') return SnipMock.createBooking(body);
+    if(path.startsWith('/payouts/') && method === 'GET') return SnipMock.getPayout(path.split('/')[2]);
+    if(path === '/payouts' && method === 'GET') return SnipMock.listPayouts();
+    if(path === '/panic' && method === 'POST') return SnipMock.panic(body);
+    throw Object.assign(new Error('mock_route_missing'),{status:404});
+  }
+  const res = await fetch(SNIPDRIP_API_BASE + path, {
+    method,
+    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (getAuthToken() || 'demo'), ...(opts.headers || {}) },
+    body: body != null ? JSON.stringify(body) : undefined
+  });
+  const data = await res.json().catch(() => ({}));
+  if(!res.ok){
+    const err = new Error(data.error || res.statusText);
+    err.status = res.status; err.code = data.code || data.error; err.data = data;
+    throw err;
+  }
+  return data;
+}
+
+
+/* ---------------- auth (phone OTP) ---------------- */
+const AUTH_TOKEN_KEY = 'snipndrip_token';
+const AUTH_USER_KEY = 'snipndrip_user';
+let authPendingPhone = '';
+
+function getAuthToken(){ return localStorage.getItem(AUTH_TOKEN_KEY) || ''; }
+function getAuthUser(){
+  try { return JSON.parse(localStorage.getItem(AUTH_USER_KEY) || 'null'); } catch { return null; }
+}
+function setAuth(token, user){
+  localStorage.setItem(AUTH_TOKEN_KEY, token || '');
+  localStorage.setItem(AUTH_USER_KEY, JSON.stringify(user || null));
+  updateAuthUI();
+}
+function clearAuth(){
+  localStorage.removeItem(AUTH_TOKEN_KEY);
+  localStorage.removeItem(AUTH_USER_KEY);
+  updateAuthUI();
+}
+function openAuth(){
+  document.getElementById('auth-step-phone').style.display = 'block';
+  document.getElementById('auth-step-code').style.display = 'none';
+  document.getElementById('auth-demo-hint').style.display = 'none';
+  document.getElementById('auth-overlay').classList.add('show');
+}
+function closeAuth(){ document.getElementById('auth-overlay').classList.remove('show'); }
+function backToPhoneStep(){
+  document.getElementById('auth-step-phone').style.display = 'block';
+  document.getElementById('auth-step-code').style.display = 'none';
+}
+async function requestAuthOtp(){
+  const phone = (document.getElementById('auth-phone').value || '').trim();
+  if(!phone){ alert('Enter your mobile number'); return; }
+  try {
+    const res = await snipFetch('/auth/otp/request', { method:'POST', body:{ phone } });
+    authPendingPhone = res.phone || phone;
+    document.getElementById('auth-phone-label').textContent = authPendingPhone;
+    document.getElementById('auth-step-phone').style.display = 'none';
+    document.getElementById('auth-step-code').style.display = 'block';
+    const hint = document.getElementById('auth-demo-hint');
+    if(res.demo_code){
+      hint.style.display = 'block';
+      hint.textContent = 'Demo code (SMS not connected yet): ' + res.demo_code;
+      document.getElementById('auth-code').value = res.demo_code;
+    } else {
+      hint.style.display = 'none';
+    }
+  } catch(e){
+    alert(e.message === 'invalid_phone' ? 'Use a valid SA number, e.g. 082 123 4567' : (e.message || 'Could not send code'));
+  }
+}
+async function verifyAuthOtp(){
+  const code = (document.getElementById('auth-code').value || '').trim();
+  if(!/^\d{6}$/.test(code)){ alert('Enter the 6-digit code'); return; }
+  try {
+    const res = await snipFetch('/auth/otp/verify', { method:'POST', body:{ phone: authPendingPhone, code } });
+    setAuth(res.token, res.user);
+    closeAuth();
+  } catch(e){
+    const msg = {
+      otp_incorrect: 'Incorrect code — try again',
+      otp_expired: 'Code expired — request a new one',
+      too_many_attempts: 'Too many tries — request a new code'
+    }[e.message] || e.message || 'Could not verify';
+    alert(msg);
+  }
+}
+function signOut(){
+  clearAuth();
+  snipFetch('/auth/logout', { method:'POST', body:{} }).catch(()=>{});
+}
+function updateAuthUI(){
+  const u = getAuthUser();
+  const el = document.getElementById('auth-profile-row');
+  if(!el) return;
+  if(u){
+    el.innerHTML = `<div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"/></svg></div><div><strong>${u.full_name || 'Signed in'}</strong><span>${u.phone || ''}</span></div></div><button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); signOut()">Sign out</button>`;
+  } else {
+    el.innerHTML = `<div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"/></svg></div><div><strong>Sign in with phone</strong><span>OTP · no password</span></div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>`;
+    el.setAttribute('onclick', 'openAuth()');
+  }
+}
+
+
+/* ---------------- data ---------------- */
+const CATEGORIES = [
+  {name:'Braids & Locs', icon:'M6 3c3 0 4 3 4 6s-1 8-4 8-4-2-4-4 1-3 3-3M18 3c-3 0-4 3-4 6s1 8 4 8 4-2 4-4-1-3-3-3'},
+  {name:'Barbering', icon:'M6 3l6 9-6 9M18 3l-6 9 6 9'},
+  {name:'Wigs & Weaves', icon:'M12 3a7 7 0 00-7 7v8h4v-6a3 3 0 016 0v6h4v-8a7 7 0 00-7-7z'},
+  {name:'Colour', icon:'M12 3v18M5 8l14 8M19 8L5 16'},
+  {name:'Bridal & Events', icon:'M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9L9.5 8z'},
+  {name:"Kids' styles", icon:'M12 2a4 4 0 014 4c0 2-4 6-4 6s-4-4-4-6a4 4 0 014-4zM6 22c0-4 2.7-6 6-6s6 2 6 6'},
+  {name:'Nails', icon:'M9 3c0 5-2 6-2 11a5 5 0 0010 0c0-5-2-6-2-11'},
+  {name:'Makeup', icon:'M8 21l4-13 4 13M9 12h6M6 3l3 2M18 3l-3 2'}
+];
+
+const STYLISTS = [
+  {id:1, name:'Naledi K.', initials:'NK', color:'#B9832A', spec:'Braids & Locs specialist', rating:4.9, reviews:212, distance:'2.1 km', from:450, lat:-26.1448, lng:28.0436,
+    bio:'Nine years braiding in Johannesburg. Naledi specialises in knotless styles that protect the hairline and last up to six weeks.',
+    portfolio:['pat-braid','pat-locs','pat-braid','pat-curl','pat-braid','pat-locs'],
+    services:[{name:'Knotless braids (medium)',dur:'3h 30m',price:895},{name:'Box braids (large)',dur:'2h 15m',price:650},{name:'Cornrows, kids',dur:'1h',price:300},{name:'Loc retwist',dur:'1h 30m',price:420}],
+    reviewsList:[
+      {a:'Boitumelo, verified customer', t:'Naledi arrived on time and my knotless braids lasted six weeks. Seeing her route on the way over made the whole thing feel safe.'},
+      {a:'Refilwe, verified customer', t:'First house call I have booked and it will not be the last. Gentle with my daughter and the price matched the quote exactly.'}
+    ]},
+  {id:2, name:'Thabo M.', initials:'TM', color:'#4A2545', spec:'Barbering & fades', rating:4.8, reviews:167, distance:'3.4 km', from:180, lat:-26.1925, lng:28.0340,
+    bio:'Thabo trained in Braamfontein and now takes his kit door to door across Johannesburg, from skin fades to beard shaping.',
+    portfolio:['pat-fade','pat-fade','pat-silk','pat-fade','pat-locs','pat-fade'],
+    services:[{name:'Skin fade',dur:'40m',price:180},{name:'Fade + beard line-up',dur:'1h',price:260},{name:'Kids cut',dur:'30m',price:120}],
+    reviewsList:[{a:'Sipho, verified customer', t:'Cleanest fade I have had, and he brought his own clippers, cape and disinfectant without me asking.'}]},
+  {id:3, name:'Amahle P.', initials:'AP', color:'#5C6B4F', spec:'Wig & weave installs', rating:5.0, reviews:98, distance:'1.6 km', from:600, lat:-26.1385, lng:28.0500,
+    bio:'Amahle installs and customises human-hair units, and sells several of her own pieces through the SnipñDrip marketplace.',
+    portfolio:['pat-wig','pat-curl','pat-wig','pat-silk','pat-wig','pat-curl'],
+    services:[{name:'Closure wig install',dur:'2h',price:600},{name:'Frontal wig install + tint',dur:'2h 45m',price:900}],
+    reviewsList:[{a:'Lerato, verified customer', t:'She matched the lace to my skin tone perfectly and the unit has not shifted once in three weeks.'}]},
+  {id:4, name:'Kagiso R.', initials:'KR', color:'#A33D2C', spec:'Colour & silk press', rating:4.7, reviews:145, distance:'4.0 km', from:350, lat:-26.1080, lng:28.0620,
+    bio:'Kagiso focuses on gentle colour correction and silk presses for natural hair, using low-heat tools she brings with her.',
+    portfolio:['pat-silk','pat-curl','pat-silk','pat-braid','pat-silk','pat-curl'],
+    services:[{name:'Silk press',dur:'1h 15m',price:400},{name:'Root touch-up colour',dur:'2h',price:550}],
+    reviewsList:[{a:'Nomvula, verified customer', t:'My hair has never had this much shine after a press. She checks in about heat the whole way through.'}]},
+  {id:5, name:'Zanele D.', initials:'ZD', color:'#5C3B0F', spec:'Bridal & event styling', rating:4.9, reviews:76, distance:'5.2 km', from:900, lat:-26.1610, lng:28.0180,
+    bio:'Zanele styles wedding parties and matric dances, and can take on group bookings for the full bridal train.',
+    portfolio:['pat-curl','pat-silk','pat-wig','pat-braid','pat-curl','pat-silk'],
+    services:[{name:'Bridal updo trial',dur:'1h',price:450},{name:'Wedding day styling',dur:'2h',price:900}],
+    reviewsList:[{a:'Aphiwe, verified customer', t:'Booked her for six bridesmaids in one morning. Every style held through an outdoor ceremony and dinner.'}]},
+  {id:6, name:'Nomsa T.', initials:'NT', color:'#8A6A1E', spec:'Nail technician', rating:4.9, reviews:134, distance:'2.8 km', from:180, lat:-26.1560, lng:28.0705,
+    bio:'Nomsa brings a full sanitised kit to every appointment — gel overlays, acrylics and hand-painted nail art, all cured with a portable UV lamp.',
+    portfolio:['pat-nails','pat-nailsart','pat-nails','pat-nailsart','pat-nails','pat-nailsart'],
+    services:[{name:'Gel overlay, natural nails',dur:'50m',price:180},{name:'Acrylic full set',dur:'1h 20m',price:320},{name:'Hand-painted nail art (per set)',dur:'1h 45m',price:420},{name:"Kids' mini mani",dur:'25m',price:90}],
+    reviewsList:[{a:'Palesa, verified customer', t:'She sanitises every tool in front of you before starting, and the gel lasted a full three weeks without chipping.'}]},
+  {id:7, name:'Karabo L.', initials:'KL', color:'#A33D2C', spec:'Makeup artist', rating:4.8, reviews:109, distance:'3.6 km', from:350, lat:-26.1330, lng:28.0290,
+    bio:'Karabo works across weddings, matric dances and photoshoots, and carries shades for a full range of skin tones in every kit.',
+    portfolio:['pat-makeup','pat-glam','pat-makeup','pat-glam','pat-makeup','pat-glam'],
+    services:[{name:'Everyday glam makeup',dur:'45m',price:350},{name:'Bridal makeup + trial',dur:'2h',price:1200},{name:'Photoshoot makeup',dur:'1h 15m',price:600},{name:"Matric dance glam",dur:'1h',price:450}],
+    reviewsList:[{a:'Thandeka, verified customer', t:'She matched my foundation shade perfectly on the first try and it lasted through an entire reception in summer heat.'}]}
+];
+
+const PRODUCTS = [
+  {name:'Curl-defining oil blend', price:220, seller:'Amahle P.', icon:'droplet', color:'#EFE1EC', topic:'Hair'},
+  {name:'Handmade shea butter pomade', price:150, seller:'Naledi K.', icon:'jar', color:'#F1E3CE', topic:'Hair'},
+  {name:'Wide-tooth detangling comb', price:65, seller:'SnipñDrip Basics', icon:'comb', color:'#E7ECDF', topic:'Hair'},
+  {name:'Human hair closure wig, 16"', price:2400, seller:'Amahle P.', icon:'wig', color:'#EFE1EC', topic:'Hair'},
+  {name:'Edge control gel', price:95, seller:'SnipñDrip Basics', icon:'jar', color:'#F1E3CE', topic:'Hair'},
+  {name:'Satin bonnet, double-lined', price:110, seller:'Kagiso R.', icon:'bonnet', color:'#F5E1DC', topic:'Hair'},
+  {name:'Long-wear gel polish set', price:260, seller:'Nomsa T.', icon:'polish', color:'#F5E1DC', topic:'Nail'},
+  {name:'Cuticle oil pen', price:70, seller:'Nomsa T.', icon:'polish', color:'#F5E1DC', topic:'Nail'},
+  {name:'24h setting spray', price:180, seller:'Karabo L.', icon:'spray', color:'#F1E3CE', topic:'Makeup'},
+  {name:'Everyday glam brush set', price:340, seller:'Karabo L.', icon:'brush', color:'#EFE1EC', topic:'Makeup'},
+  {name:'Argan repair treatment', price:245, seller:'SilkRoot (brand partner)', icon:'droplet', color:'#F1E3CE', topic:'Hair', sponsored:true}
+];
+const TOPICS = ['All','Hair','Nail','Makeup'];
+let activeMarketCat = 'All';
+let marketSearch = '';
+let activeHomeCat = null;
+
+const PROD_ICONS = {
+  droplet:'<path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"/>',
+  jar:'<rect x="6" y="8" width="12" height="12" rx="2"/><path d="M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2"/>',
+  comb:'<path d="M4 5h16v3H4zM6 8v11M9 8v9M12 8v11M15 8v9M18 8v11"/>',
+  wig:'<path d="M12 3a7 7 0 00-7 7v8h4v-6a3 3 0 016 0v6h4v-8a7 7 0 00-7-7z"/>',
+  bonnet:'<path d="M4 15a8 8 0 0116 0z"/><path d="M3 15h18"/>',
+  polish:'<path d="M10 3h4v3.5l2 2.5V19a2 2 0 01-2 2h-4a2 2 0 01-2-2V9l2-2.5V3z"/><path d="M9 12h6"/>',
+  spray:'<rect x="9" y="9" width="6" height="12" rx="1.2"/><path d="M11 9V5h2v4M9 5h4M13 3l2 2M15.5 4.5l1.2-1.2"/>',
+  brush:'<path d="M16 2l6 6-9 9-6-6 9-9z"/><path d="M7 12L3 21l9-4"/>'
+};
+
+const SAVED_ADDRESSES = [
+  {label:'Home', text:'24 Bolton Rd, Rosebank', lat:-26.1465, lng:28.0435},
+  {label:'Work', text:'155 West St, Sandton', lat:-26.1076, lng:28.0567},
+  {label:'Custom', text:'', lat:-26.1465, lng:28.0435}
+];
+
+// Straight-line distance between two coordinates, in km.
+// In production this is the exact spot to swap in a real routing API call
+// (Google Distance Matrix / Mapbox Directions) for live driving distance and time —
+// this offline formula stands in for that so the flow works without a network key.
+function haversineKm(lat1, lon1, lat2, lon2){
+  const R = 6371;
+  const dLat = (lat2-lat1) * Math.PI/180;
+  const dLon = (lon2-lon1) * Math.PI/180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+function routeEstimate(stylist, addr){
+  const straight = haversineKm(addr.lat, addr.lng, stylist.lat, stylist.lng);
+  const km = Math.round(straight * 1.35 * 10) / 10; // rough road-distance factor vs straight-line
+  const mins = Math.max(8, Math.round(km / 24 * 60));
+  const fee = Math.round(25 + km * 9);
+  return {km, mins, fee};
+}
+
+const BOOKINGS = [
+  {stylistId:1, service:'Knotless braids (medium)', when:'Today, 14:00', status:'upcoming', total:895, address:'24 Bolton Rd, Rosebank'},
+  {stylistId:2, service:'Skin fade', when:'12 Sept, 10:30', status:'done', total:180, address:'24 Bolton Rd, Rosebank'},
+  {stylistId:4, service:'Silk press', when:'2 Sept, 16:00', status:'done', total:400, address:'24 Bolton Rd, Rosebank'}
+];
+let trackingStylistId = 1;
+let trackingBookingIdx = 0;
+
+/* ---------------- render helpers ---------------- */
+function starIcon(){return '<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>';}
+
+function renderCats(){
+  const el = document.getElementById('cat-row');
+  el.innerHTML = CATEGORIES.map(c=>`
+    <div class="cat-chip" onclick="pickHomeCat('${c.name.replace(/'/g,"\\'")}')">
+      <div class="ico" style="${activeHomeCat===c.name ? 'background:var(--amber);border-color:var(--amber)' : ''}"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="${activeHomeCat===c.name?'var(--amber-ink)':'var(--plum)'}">${'<path d=\"'+c.icon+'\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>'}</svg></div>
+      <span>${c.name}</span>
+    </div>`).join('');
+}
+renderCats();
+function pickHomeCat(name){
+  activeHomeCat = (activeHomeCat === name) ? null : name;
+  renderCats();
+  renderStylistList();
+}
+
+const CAT_KEYWORDS = {
+  'Braids & Locs':['braid','loc'],
+  'Barbering':['barber','fade'],
+  'Wigs & Weaves':['wig','weave'],
+  'Colour':['colour','color','silk press'],
+  'Bridal & Events':['bridal','event'],
+  "Kids' styles":['kids','cornrow'],
+  'Nails':['nail','gel overlay','acrylic','mani'],
+  'Makeup':['makeup','glam','bridal makeup','photoshoot']
+};
+function renderStylistList(){
+  const el = document.getElementById('stylist-list');
+  let list = STYLISTS;
+  if(activeHomeCat){
+    const words = CAT_KEYWORDS[activeHomeCat] || [];
+    list = STYLISTS.filter(s => words.some(w => (s.spec+' '+s.services.map(x=>x.name).join(' ')).toLowerCase().includes(w)));
+  }
+  if(!list.length){
+    el.innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><h3>No one nearby for this yet</h3><p>Try another category, or check back soon as more stylists join SnipñDrip.</p></div>`;
+    return;
+  }
+  el.innerHTML = list.map(s=>`
+    <div class="stylist-card" onclick="openStylist(${s.id})">
+      <div class="avatar" style="background:${s.color}">${s.initials}</div>
+      <div class="s-info">
+        <div class="name-row"><h3>${s.name}</h3><div class="verified-dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div></div>
+        <div class="spec">${s.spec}</div>
+        <div class="s-meta"><span class="stars">${starIcon()} ${s.rating}</span><span>${s.reviews} reviews</span><span>${s.distance}</span></div>
+      </div>
+      <div class="s-price">from<strong>R${s.from}</strong></div>
+    </div>`).join('');
+}
+renderStylistList();
+
+function renderMarket(){
+  document.getElementById('market-chip-row').innerHTML = TOPICS.map((c)=>{
+    const sel = activeMarketCat===c;
+    return `<div class="cat-chip" style="width:auto;padding:0 4px" onclick="pickMarketCat('${c}')"><div class="ico" style="width:auto;height:auto;background:none;border:none;padding:9px 15px;border-radius:99px;border:1.5px solid rgba(251,243,231,${sel?'0.9':'0.25'});background:${sel?'var(--amber)':'transparent'}"><span style="font-size:12.5px;font-weight:600;color:${sel?'var(--amber-ink)':'rgba(251,243,231,0.8)'}">${c}</span></div></div>`;
+  }).join('');
+  let list = activeMarketCat==='All' ? PRODUCTS : PRODUCTS.filter(p=>p.topic===activeMarketCat);
+  if(marketSearch.trim()){
+    const q = marketSearch.trim().toLowerCase();
+    list = list.filter(p => p.name.toLowerCase().includes(q) || p.seller.toLowerCase().includes(q));
+  }
+  const grid = document.getElementById('prod-grid');
+  if(!list.length){
+    grid.style.display='block';
+    grid.innerHTML = `<div class="empty-state" style="padding:40px 10px 10px"><h3>Nothing here yet</h3><p>Try a different topic or search term.</p></div>`;
+    return;
+  }
+  grid.style.display='grid';
+  grid.innerHTML = list.map((p)=>{
+    const i = PRODUCTS.indexOf(p);
+    return `<div class="prod-card ${p.sponsored?'sponsored':''}">
+      ${p.sponsored?'<span class="sponsored-tag">Sponsored</span>':''}
+      <div class="prod-thumb" style="background:${p.color}"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6">${PROD_ICONS[p.icon]}</svg></div>
+      <h4>${p.name}</h4>
+      <p class="seller">by ${p.seller}</p>
+      <div class="bottom-row"><span class="price">R${p.price}</span>
+        <button class="add-btn" id="add-${i}" onclick="addToCart(${i})"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function pickMarketCat(c){ activeMarketCat = c; renderMarket(); }
+function searchMarket(v){ marketSearch = v; renderMarket(); }
+renderMarket();
+function addToCart(i){
+  const b = document.getElementById('add-'+i);
+  b.classList.add('added');
+  b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+}
+
+function renderBookingsList(){
+  const el = document.getElementById('bookings-list');
+  if(!BOOKINGS.length){
+    el.innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16"/></svg><h3>No bookings yet</h3><p>Once you book a stylist, it will show up here with live tracking and your receipt.</p></div>`;
+    return;
+  }
+  el.innerHTML = BOOKINGS.map((b,i)=>{
+    const s = STYLISTS.find(x=>x.id===b.stylistId);
+    const tagLabel = b.status==='upcoming' ? 'Upcoming' : b.status==='cancelled' ? 'Cancelled' : 'Completed';
+    const tagClass = b.status==='upcoming' ? 'upcoming' : 'done';
+    return `<div class="booking-card" onclick="${b.status==='upcoming' ? `renderTracking(${i}); go('tracking')` : `openStylist(${s.id})`}">
+      <div class="top">
+        <div><h4>${s.name}</h4><div class="when">${b.when}${b.recurring?' · repeats':''}</div></div>
+        <span class="tag ${tagClass}">${tagLabel}</span>
+      </div>
+      <div class="s-meta" style="margin-top:0; margin-bottom:10px"><span>${b.service}</span><span>R${b.total}</span></div>
+      ${b.status==='upcoming' ? `<button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); openManage(${i})">Manage booking</button>` : ''}
+      ${b.status==='done' ? `<button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); rebook(${i})">Rebook</button>` : ''}
+    </div>`;
+  }).join('');
+}
+renderBookingsList();
+
+function renderEarnBars(){
+  const el = document.getElementById('earn-bars');
+  const vals = [30,55,40,70,50,85,60];
+  el.innerHTML = vals.map(v=>`<i style="height:${v}%"></i>`).join('');
+}
+renderEarnBars();
+
+/* ---------------- stylist detail ---------------- */
+let activeStylist = STYLISTS[0];
+function renderStylistDetail(id){
+  activeStylist = STYLISTS.find(s=>s.id===id);
+  const s = activeStylist;
+  const el = document.getElementById('stylist-detail');
+  el.innerHTML = `
+    <div class="stylist-hero">
+      <div class="avatar lg" style="background:${s.color}">${s.initials}</div>
+      <h2>${s.name}</h2>
+      <div class="spec">${s.spec} · ${s.distance} away</div>
+      <div class="stat-row">
+        <div class="stat"><strong>${s.rating}</strong><span>${s.reviews} reviews</span></div>
+        <div class="stat"><strong>${s.services.length}</strong><span>services</span></div>
+        <div class="stat"><strong>R${s.from}+</strong><span>starting from</span></div>
+      </div>
+    </div>
+    <div style="padding:18px 14px 0">
+      <div class="section-head" style="margin-top:0"><h2>About</h2></div>
+      <p style="font-size:13.5px; line-height:1.6; color:#40342a; margin:0 0 6px">${s.bio}</p>
+      <div class="section-head"><h2>Portfolio</h2></div>
+      <div class="portfolio-grid">${s.portfolio.map(p=>`<div class="swatch ${p}"></div>`).join('')}</div>
+      <div class="section-head"><h2>Services &amp; pricing</h2></div>
+      <div>${s.services.map(sv=>`<div class="service-row"><div class="info"><span class="txt"><strong>${sv.name}</strong><span>${sv.dur}</span></span></div><span class="price">R${sv.price}</span></div>`).join('')}</div>
+      <p style="font-size:11.5px; color:#8a7d6d; margin:8px 0 0">Final price adjusts for travel distance and same-day urgency, shown before you pay.</p>
+      <div class="section-head"><h2>Reviews</h2></div>
+      <p style="font-size:11.5px; color:#8a7d6d; margin:-4px 0 6px">Reviews can only be left after a completed, verified booking — one per booking, so they reflect real appointments.</p>
+      <div>${s.reviewsList.map(r=>`<div class="review"><div class="top"><div class="avatar sm" style="background:#ccc; color:#40342a">${r.a[0]}</div><strong style="flex:1">${r.a}</strong><a href="javascript:void(0)" style="font-size:11px; color:#a89a89" onclick="openSupport('review')">Report</a></div><div class="stars-sm" style="margin-bottom:6px">${starIcon()}${starIcon()}${starIcon()}${starIcon()}${starIcon()}</div><p>${r.t}</p></div>`).join('')}</div>
+      <div style="height:10px"></div>
+    </div>`;
+}
+
+function openStylist(id){
+  renderStylistDetail(id);
+  go('stylist');
+}
+function startBooking(){
+  bookingState = freshBookingState();
+  go('booking');
+}
+
+/* ---------------- booking flow ---------------- */
+let bookingStep = 0;
+function freshBookingState(){
+  return {serviceIdx:0, day:0, time:null, urgent:false, addressIdx:0, customAddress:'', people:1, recurring:'none', pay:0};
+}
+let bookingState = freshBookingState();
+const DAYS = ['MON','TUE','WED','THU','FRI'];
+const TIMES = ['09:00','11:00','13:00','14:00','16:00','18:00'];
+const PAY_METHODS = [{name:'Ozow', bg:'#0B4F6C'},{name:'PayFast', bg:'#123E2A'},{name:'Card', bg:'#3D2A20'}];
+
+function currentAddress(){
+  const a = SAVED_ADDRESSES[bookingState.addressIdx];
+  if(a.label==='Custom') return {...a, text: bookingState.customAddress || 'your address'};
+  return a;
+}
+function routeInfo(){ return routeEstimate(activeStylist, currentAddress()); }
+function travelFee(){ return routeInfo().fee; }
+function urgencyFee(){ return bookingState.urgent ? 100 : 0; }
+function serviceTotal(){ return activeStylist.services[bookingState.serviceIdx].price * bookingState.people; }
+function grandTotal(){ return serviceTotal() + travelFee() + urgencyFee(); }
+function isKidsService(){ return /kid/i.test(activeStylist.services[bookingState.serviceIdx].name); }
+
+function renderDots(){
+  document.getElementById('steps-dots').innerHTML = [0,1,2,3,4].map(i=>`<i class="${i<=bookingStep?'done':''}"></i>`).join('');
+}
+
+function renderBookingStep(){
+  renderDots();
+  const s = activeStylist;
+  const body = document.getElementById('booking-body');
+  const nextBtn = document.getElementById('booking-next');
+  nextBtn.textContent = bookingStep===4 ? 'Confirm & pay' : 'Continue';
+
+  if(bookingStep===0){
+    body.innerHTML = `<div class="step-title">Choose a service</div><p class="step-sub">with ${s.name}</p>
+      <div>${s.services.map((sv,i)=>`<div class="service-row ${i===bookingState.serviceIdx?'selected':''}" onclick="pickService(${i})"><div class="info"><div class="radio"></div><span class="txt"><strong>${sv.name}</strong><span>${sv.dur}</span></span></div><span class="price">R${sv.price}</span></div>`).join('')}</div>
+      ${isKidsService() ? `<div class="safety-tip" style="background:var(--plum-pale); border-radius:12px; padding:12px 12px; margin-top:8px"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"/></svg><p>A parent or guardian must be present for the full appointment for children's services.</p></div>` : ''}
+      <div class="urgency-toggle">
+        <div class="txt"><strong>Booking for more than one person?</strong><span>Great for bridal parties or families — travel fee is only charged once</span></div>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:center; gap:18px; margin-top:10px;">
+        <button class="round-icon-btn" onclick="setPeople(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2.2"><path d="M5 12h14" stroke-linecap="round"/></svg></button>
+        <strong style="font-family:'Fraunces',serif; font-size:20px; min-width:24px; text-align:center">${bookingState.people}</strong>
+        <button class="round-icon-btn" onclick="setPeople(1)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2.2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="urgency-toggle" style="margin-top:16px">
+        <div class="txt"><strong>Need it today?</strong><span>Adds a R100 urgency fee</span></div>
+        <div class="switch ${bookingState.urgent?'on':''}" onclick="toggleUrgent()"></div>
+      </div>
+      <div class="section-head"><h2 style="font-size:14px">Make this a repeat booking?</h2></div>
+      <div class="time-grid" style="grid-template-columns:repeat(3,1fr)">
+        ${[['none','One-time'],['2w','Every 2 wks'],['4w','Every 4 wks']].map(([v,l])=>`<div class="time-chip ${bookingState.recurring===v?'selected':''}" onclick="setRecurring('${v}')">${l}</div>`).join('')}
+      </div>`;
+  } else if(bookingStep===1){
+    body.innerHTML = `<div class="step-title">Pick a date &amp; time</div><p class="step-sub">${s.name.split(' ')[0]}'s next available slots</p>
+      <div class="day-row">${DAYS.map((d,i)=>`<div class="day-chip ${i===bookingState.day?'selected':''}" onclick="pickDay(${i})"><span class="dow">${d}</span><span class="num">${16+i}</span></div>`).join('')}</div>
+      <div class="time-grid">${TIMES.map(t=>`<div class="time-chip ${t===bookingState.time?'selected':''}" onclick="pickTime('${t}')">${t}</div>`).join('')}</div>`;
+  } else if(bookingStep===2){
+    const r = routeInfo();
+    const addr = currentAddress();
+    body.innerHTML = `<div class="step-title">Where should ${s.name.split(' ')[0]} come?</div><p class="step-sub">Travel fee is calculated from live route distance and shown upfront</p>
+      <div class="day-row" style="margin-bottom:12px">${SAVED_ADDRESSES.map((a,i)=>`<div class="day-chip" style="width:auto;padding:11px 16px;${i===bookingState.addressIdx?'background:var(--ink);border-color:var(--ink)':''}" onclick="pickAddress(${i})"><span class="dow" style="${i===bookingState.addressIdx?'color:var(--paper)':''}">${a.label}</span></div>`).join('')}</div>
+      ${addr.label==='Custom' ? `<div class="field"><label>Custom address</label><input value="${bookingState.customAddress}" placeholder="Street, suburb" oninput="bookingState.customAddress=this.value; renderBookingStep();"></div>` : `<div class="field"><label>Service address</label><input value="${addr.text}" disabled style="opacity:.7"></div>`}
+      <div class="field"><label>Notes for your stylist (optional)</label><textarea rows="3" placeholder="Gate code, parking, hair length…"></textarea></div>
+      <div class="urgency-toggle"><div class="txt"><strong>Estimated travel fee</strong><span>${r.km} km · about ${r.mins} min from ${s.name.split(' ')[0]} via routing estimate</span></div><strong style="font-family:'Fraunces',serif">R${r.fee}</strong></div>`;
+  } else if(bookingStep===3){
+    body.innerHTML = `<div class="step-title">How would you like to pay?</div><p class="step-sub">Payments are held securely until your booking is complete</p>
+      <div>${PAY_METHODS.map((p,i)=>`<div class="pay-option ${i===bookingState.pay?'selected':''}" onclick="pickPay(${i})"><div class="pay-badge" style="background:${p.bg}">${p.name.slice(0,2).toUpperCase()}</div><div style="flex:1"><strong style="font-size:13.5px;display:block">${p.name}</strong><span style="font-size:11.5px;color:#6b5f54">${p.name==='Card'?'Visa, Mastercard':'Instant EFT'}</span></div><div class="radio" style="margin:0"></div></div>`).join('')}</div>`;
+  } else if(bookingStep===4){
+    const r = routeInfo();
+    const recurLabel = {none:null, '2w':'Repeats every 2 weeks until you cancel', '4w':'Repeats every 4 weeks until you cancel'}[bookingState.recurring];
+    body.innerHTML = `<div class="step-title">Review &amp; confirm</div><p class="step-sub">${s.name} · ${DAYS[bookingState.day]} ${16+bookingState.day}, ${bookingState.time||'14:00'}</p>
+      <div class="receipt">
+        <div class="r-row"><span>${s.services[bookingState.serviceIdx].name}${bookingState.people>1?` × ${bookingState.people} people`:''}</span><span>R${serviceTotal()}</span></div>
+        <div class="r-row"><span>Travel fee (${r.km} km)</span><span>R${travelFee()}</span></div>
+        ${bookingState.urgent?`<div class="r-row"><span>Urgency fee</span><span>R${urgencyFee()}</span></div>`:''}
+        <div class="r-row total"><span>Total</span><span>R${grandTotal()}</span></div>
+      </div>
+      ${recurLabel?`<p style="font-size:11.5px; color:var(--moss); margin:10px 0 0; font-weight:600">🔁 ${recurLabel}. You can cancel the series anytime from Bookings.</p>`:''}
+      <p style="font-size:11.5px; color:#8a7d6d; margin:12px 0 0">Paying with ${PAY_METHODS[bookingState.pay].name}. Your address and live route are only shared with ${s.name.split(' ')[0]} once she accepts.</p>
+      <p style="font-size:11px; color:#a89a89; margin:10px 0 0">By confirming you agree your ID and booking details are processed under our POPIA-aligned privacy notice — see Safety centre for details.</p>`;
+  }
+}
+function pickService(i){bookingState.serviceIdx=i; renderBookingStep();}
+function toggleUrgent(){bookingState.urgent=!bookingState.urgent; renderBookingStep();}
+function pickDay(i){bookingState.day=i; renderBookingStep();}
+function pickTime(t){bookingState.time=t; renderBookingStep();}
+function pickPay(i){bookingState.pay=i; renderBookingStep();}
+function pickAddress(i){bookingState.addressIdx=i; renderBookingStep();}
+function setPeople(delta){bookingState.people=Math.max(1, Math.min(10, bookingState.people+delta)); renderBookingStep();}
+function setRecurring(v){bookingState.recurring=v; renderBookingStep();}
+
+async function bookingNext(){
+  if(bookingStep<4){ bookingStep++; renderBookingStep(); return; }
+
+  // Step 4 confirm: server quote → create booking (never trust client totals)
+  const nextBtn = document.getElementById('booking-next');
+  const prevLabel = nextBtn.textContent;
+  nextBtn.disabled = true;
+  nextBtn.textContent = 'Confirming…';
+
+  try {
+    const s = activeStylist;
+    const svc = s.services[bookingState.serviceIdx];
+    const addr = currentAddress();
+    const r = routeInfo();
+    const whenLabel = `${DAYS[bookingState.day]} ${16+bookingState.day}, ${bookingState.time||'14:00'}`;
+
+    // 1) Get signed quote from server / mock
+    const quote = await snipFetch('/bookings/quote', {
+      method: 'POST',
+      body: {
+        stylist_id: 'u-naledi', // demo map; production uses real stylist UUID
+        service_id: 'svc-knotless',
+        people_count: bookingState.people,
+        urgent: bookingState.urgent,
+        address: {
+          lat: addr.lat, lng: addr.lng,
+          line1: addr.text, city: 'Johannesburg'
+        },
+        // mock helpers (ignored by real server)
+        _price_rands: svc.price,
+        _travel_rands: r.fee,
+        _km: r.km,
+        _service_name: svc.name,
+        _duration_min: 180
+      }
+    });
+
+    // 2) Create booking with quote_token only
+    const result = await snipFetch('/bookings', {
+      method: 'POST',
+      body: {
+        stylist_id: quote.stylist_id,
+        service_id: quote.service_id,
+        people_count: quote.people_count,
+        urgent: quote.urgent,
+        address: quote.address,
+        quote_token: quote.quote_token,
+        scheduled_start_at: new Date(Date.now() + 2*60*60*1000).toISOString(),
+        notes: null,
+        provider: PAY_METHODS[bookingState.pay].name.toLowerCase()
+      }
+    });
+
+    const totalRands = Math.round(quote.total_cents / 100);
+    const bookingId = result.booking && result.booking.id;
+    BOOKINGS.unshift({
+      stylistId: s.id,
+      service: svc.name,
+      when: whenLabel,
+      status: 'upcoming',
+      total: totalRands,
+      recurring: bookingState.recurring !== 'none',
+      address: addr.text,
+      bookingId: bookingId,
+      payoutId: result.payout_id,
+      total_cents: quote.total_cents
+    });
+    renderBookingsList();
+    bookingStep = 0;
+
+    // Payment: get checkout URL then open demo pay page
+    try {
+      if (bookingId) {
+        const intent = await snipFetch('/bookings/' + bookingId + '/payment/intent', {
+          method: 'POST',
+          body: { provider: 'payfast' }
+        });
+        if (intent.redirect_url) {
+          // Same-tab checkout so mobile users always return
+          location.href = intent.redirect_url;
+          return;
+        }
+      }
+    } catch (payErr) {
+      console.warn('payment intent failed, showing success anyway', payErr);
+    }
+    goRoot('success');
+  } catch (err) {
+    console.error('booking failed', err);
+    alert(err.message === 'quote_expired'
+      ? 'Quote expired — please review the total again.'
+      : (err.message === 'quote_mismatch'
+        ? 'Price changed. Please go back and review the updated total.'
+        : "Couldn't confirm booking. Check your connection and try again."));
+  } finally {
+    nextBtn.disabled = false;
+    nextBtn.textContent = prevLabel || 'Confirm & pay';
+  }
+}
+function bookingBack(){
+  if(bookingStep>0){bookingStep--; renderBookingStep();}
+  else back();
+}
+
+/* ---------------- manage booking: cancel / reschedule ---------------- */
+function openManage(i){
+  const b = BOOKINGS[i];
+  const s = STYLISTS.find(x=>x.id===b.stylistId);
+  document.getElementById('manage-sheet-content').innerHTML = `
+    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg></div>
+    <h3>${b.service} with ${s.name}</h3>
+    <p>Free cancellation up to 4 hours before ${b.when.toLowerCase()}. After that, a 50% fee applies to cover your stylist's time. Rescheduling is always free up to 1 hour before.</p>
+    <button class="btn btn-primary" style="margin-bottom:10px" onclick="confirmReschedule(${i})">Reschedule</button>
+    <button class="btn btn-plum" style="margin-bottom:10px" onclick="confirmCancel(${i})">Cancel booking</button>
+    <button class="btn btn-ghost" onclick="closeManage()">Keep booking</button>`;
+  document.getElementById('manage-overlay').classList.add('show');
+}
+function closeManage(){ document.getElementById('manage-overlay').classList.remove('show'); }
+function confirmCancel(i){
+  BOOKINGS[i].status = 'cancelled';
+  closeManage();
+  renderBookingsList();
+}
+function confirmReschedule(i){
+  const b = BOOKINGS[i];
+  const s = STYLISTS.find(x=>x.id===b.stylistId);
+  activeStylist = s;
+  bookingState = freshBookingState();
+  bookingState.serviceIdx = Math.max(0, s.services.findIndex(sv=>sv.name===b.service));
+  closeManage();
+  bookingStep = 1; // straight to date & time since the service is already known
+  go('booking', {keepStep:true});
+}
+function rebook(i){
+  const b = BOOKINGS[i];
+  const s = STYLISTS.find(x=>x.id===b.stylistId);
+  activeStylist = s;
+  bookingState = freshBookingState();
+  bookingState.serviceIdx = Math.max(0, s.services.findIndex(sv=>sv.name===b.service));
+  bookingStep = 0;
+  go('booking', {keepStep:true});
+}
+
+/* ---------------- support / report sheet ---------------- */
+const SUPPORT_COPY = {
+  safety: {title:'Message support', cats:['General question','Something felt unsafe','Billing issue','Other']},
+  report: {title:'Report a stylist or customer', cats:['Safety concern','No-show','Poor conduct','Other']},
+  'report-customer': {title:'Report a customer', cats:['No-show','Unsafe situation','Payment issue','Other']},
+  review: {title:'Report this review', cats:['Fake or misleading','Offensive language','Wrong booking','Other']}
+};
+let supportCat = null;
+function openSupport(kind){
+  const c = SUPPORT_COPY[kind] || SUPPORT_COPY.safety;
+  supportCat = c.cats[0];
+  document.getElementById('support-sheet-content').innerHTML = `
+    <h3 style="text-align:center">${c.title}</h3>
+    <div class="sheet-chip-row" id="support-chips" style="justify-content:center">${c.cats.map(cat=>`<div class="sheet-chip ${cat===supportCat?'selected':''}" onclick="pickSupportCat('${cat.replace(/'/g,"\\'")}', this)">${cat}</div>`).join('')}</div>
+    <div class="field"><textarea rows="4" id="support-text" placeholder="Add any details that would help our team…"></textarea></div>
+    <button class="btn btn-primary" style="margin-bottom:10px" onclick="submitSupport()">Send to SnipñDrip support</button>
+    <button class="btn btn-ghost" onclick="closeSupport()">Cancel</button>`;
+  document.getElementById('support-overlay').classList.add('show');
+}
+function pickSupportCat(cat, el){
+  supportCat = cat;
+  el.parentElement.querySelectorAll('.sheet-chip').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');
+}
+function closeSupport(){ document.getElementById('support-overlay').classList.remove('show'); }
+function openAdvertise(){
+  document.getElementById('support-sheet-content').innerHTML = `
+    <h3 style="text-align:center">Advertise on SnipñDrip</h3>
+    <p>Reach customers browsing for hair, nail and makeup services and products in their area. Salons, product brands and individual artists will be able to run sponsored listings — like the one you may have spotted in Marketplace — and featured placement on Discover.</p>
+    <p style="font-size:12px; color:#8a7d6d">Ad packages and pricing aren't live yet — we'll design these once the commission model is settled, since the two will likely work together.</p>
+    <button class="btn btn-primary" onclick="closeSupport()">Got it</button>`;
+  document.getElementById('support-overlay').classList.add('show');
+}
+
+/* ---------------- stylist schedule ---------------- */
+const SCHEDULE_DAYS = [
+  { id:'mon', label:'Monday', on:true, start:'09:00', end:'18:00' },
+  { id:'tue', label:'Tuesday', on:true, start:'09:00', end:'18:00' },
+  { id:'wed', label:'Wednesday', on:true, start:'09:00', end:'17:00' },
+  { id:'thu', label:'Thursday', on:true, start:'09:00', end:'18:00' },
+  { id:'fri', label:'Friday', on:true, start:'09:00', end:'16:00' },
+  { id:'sat', label:'Saturday', on:true, start:'08:00', end:'14:00' },
+  { id:'sun', label:'Sunday', on:false, start:'10:00', end:'14:00' }
+];
+const HOUR_OPTS = ['07:00','08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00'];
+
+function openSchedule(){
+  renderSchedule();
+  go('schedule');
+}
+function toggleScheduleDay(id){
+  const d = SCHEDULE_DAYS.find(x => x.id === id);
+  if(d){ d.on = !d.on; renderSchedule(); }
+}
+function setScheduleHour(id, which, val){
+  const d = SCHEDULE_DAYS.find(x => x.id === id);
+  if(d){ d[which] = val; }
+}
+function saveSchedule(){
+  const onDays = SCHEDULE_DAYS.filter(d => d.on).map(d => d.label.slice(0,3)).join(', ');
+  document.getElementById('schedule-body').insertAdjacentHTML('afterbegin',
+    `<div class="safety-tip" style="background:var(--moss-pale); border-radius:12px; padding:12px; margin-bottom:14px" id="sched-saved">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      <p style="margin:0">Saved. Customers can book you on <strong>${onDays || 'no days'}</strong>.</p>
+    </div>`);
+  setTimeout(()=>{ const el = document.getElementById('sched-saved'); if(el) el.remove(); }, 2800);
+}
+function renderSchedule(){
+  const body = document.getElementById('schedule-body');
+  body.innerHTML = `
+    <p style="font-size:12.5px; color:#6b5f54; margin:0 0 16px">Toggle days you’re available for house calls. Travel time is added on top of these windows when a customer books.</p>
+    ${SCHEDULE_DAYS.map(d => `
+      <div class="urgency-toggle" style="margin-bottom:10px; align-items:flex-start">
+        <div class="txt" style="flex:1">
+          <strong>${d.label}</strong>
+          ${d.on ? `<div style="display:flex; gap:8px; margin-top:8px; align-items:center">
+            <select onchange="setScheduleHour('${d.id}','start',this.value)" style="flex:1; padding:8px 10px; border-radius:10px; border:1px solid var(--paper-line); background:var(--paper); font:inherit; color:var(--ink)">
+              ${HOUR_OPTS.map(h => `<option value="${h}" ${h===d.start?'selected':''}>${h}</option>`).join('')}
+            </select>
+            <span style="font-size:12px; color:#8a7d6d">to</span>
+            <select onchange="setScheduleHour('${d.id}','end',this.value)" style="flex:1; padding:8px 10px; border-radius:10px; border:1px solid var(--paper-line); background:var(--paper); font:inherit; color:var(--ink)">
+              ${HOUR_OPTS.map(h => `<option value="${h}" ${h===d.end?'selected':''}>${h}</option>`).join('')}
+            </select>
+          </div>` : `<span style="display:block; margin-top:4px; font-size:12px; color:#a89a89">Off — no bookings</span>`}
+        </div>
+        <div class="switch ${d.on?'on':''}" onclick="toggleScheduleDay('${d.id}')" style="margin-top:4px"></div>
+      </div>`).join('')}
+    <div class="urgency-toggle" style="margin-top:8px">
+      <div class="txt"><strong>Same-day bookings</strong><span>Let customers book for today when there’s still time</span></div>
+      <div class="switch on" id="same-day-switch" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <button class="btn btn-primary" style="margin-top:20px; width:100%" onclick="saveSchedule()">Save schedule</button>
+    <p style="font-size:11px; color:#a89a89; margin:12px 0 24px; text-align:center">Changes apply to new bookings only. Existing confirmed jobs stay as they are.</p>`;
+}
+
+/* ---------------- teach a technique / tutorials ---------------- */
+const MY_TUTORIALS = [
+  { id:1, title:'Knotless braid tension that protects the hairline', price:180, sales:14, status:'live' },
+  { id:2, title:'Quick loc retwist for house calls', price:95, sales:0, status:'draft' }
+];
+
+function openTutorials(){
+  renderTutorials();
+  go('tutorials');
+}
+function renderTutorials(){
+  const body = document.getElementById('tutorials-body');
+  const live = MY_TUTORIALS.filter(t => t.status === 'live');
+  const earned = live.reduce((a,t) => a + t.price * t.sales, 0);
+  body.innerHTML = `
+    <div class="earn-card" style="margin-bottom:16px">
+      <span>Tutorial earnings</span>
+      <strong>R ${earned.toLocaleString()}</strong>
+      <p style="font-size:12px; margin:8px 0 0; opacity:.85">${live.length} live · other stylists buy once, keep forever</p>
+    </div>
+    <p style="font-size:12.5px; color:#6b5f54; margin:0 0 14px">Sell short video tutorials to other SnipñDrip stylists. SnipñDrip takes 15% — the rest is yours when they purchase.</p>
+    <div class="section-head" style="margin-top:4px"><h2>Your tutorials</h2></div>
+    ${MY_TUTORIALS.map(t => `
+      <div class="list-row" style="cursor:default">
+        <div class="left">
+          <div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19V10M12 19V4M20 19v-7"/></svg></div>
+          <div>
+            <strong>${t.title}</strong>
+            <span>R${t.price} · ${t.sales} sale${t.sales===1?'':'s'} · ${t.status === 'live' ? 'Live' : 'Draft'}</span>
+          </div>
+        </div>
+        <span style="font-size:11px; font-weight:600; color:${t.status==='live'?'var(--moss)':'#a89a89'}">${t.status==='live'?'Live':'Draft'}</span>
+      </div>`).join('')}
+    <button class="btn btn-primary" style="margin-top:18px; width:100%" onclick="openNewTutorial()">Upload a new tutorial</button>
+    <p style="font-size:11px; color:#a89a89; margin:12px 0 24px; text-align:center">Phone video is fine. Keep it under 20 minutes and focus on one technique.</p>`;
+}
+function openNewTutorial(){
+  document.getElementById('support-sheet-content').innerHTML = `
+    <h3 style="text-align:center">New tutorial</h3>
+    <div class="field"><label>Title</label><input id="tut-title" placeholder="e.g. Soft knotless for fine hairlines"></div>
+    <div class="field"><label>Price (Rands)</label><input id="tut-price" type="number" min="50" value="150" placeholder="150"></div>
+    <div class="field"><label>Short description</label><textarea id="tut-desc" rows="3" placeholder="What will other stylists learn?"></textarea></div>
+    <p style="font-size:12px; color:#8a7d6d; margin:0 0 14px">Video upload will connect to your camera roll in the real app. For this prototype we’ll mark it as a draft.</p>
+    <button class="btn btn-primary" style="margin-bottom:10px" onclick="saveNewTutorial()">Save as draft</button>
+    <button class="btn btn-ghost" onclick="closeSupport()">Cancel</button>`;
+  document.getElementById('support-overlay').classList.add('show');
+}
+function saveNewTutorial(){
+  const title = (document.getElementById('tut-title') || {}).value || 'Untitled technique';
+  const price = Math.max(50, Number((document.getElementById('tut-price') || {}).value) || 150);
+  MY_TUTORIALS.unshift({ id: Date.now(), title: title.trim() || 'Untitled technique', price, sales: 0, status: 'draft' });
+  closeSupport();
+  renderTutorials();
+}
+
+/* ---------------- invite a stylist ---------------- */
+const STYLIST_REF_CODE = 'SNIP-STY-882';
+
+function openInviteStylist(){
+  document.getElementById('support-sheet-content').innerHTML = `
+    <h3 style="text-align:center">Invite a stylist</h3>
+    <p style="text-align:center; margin-bottom:6px">When someone joins SnipñDrip with your code and completes their first paid booking, you both earn <strong>R100</strong>.</p>
+    <div style="background:var(--paper); border:1px dashed var(--paper-line); border-radius:14px; padding:18px; text-align:center; margin:14px 0">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:#a89a89; font-weight:600; margin-bottom:6px">Your code</div>
+      <div style="font-family:'Fraunces',serif; font-size:22px; font-weight:600; letter-spacing:.04em" id="ref-code-display">${STYLIST_REF_CODE}</div>
+    </div>
+    <button class="btn btn-primary" style="margin-bottom:10px" onclick="copyStylistCode()">Copy code</button>
+    <button class="btn btn-ghost" style="margin-bottom:10px" onclick="shareStylistInvite()">Share invite link</button>
+    <p style="font-size:11.5px; color:#a89a89; text-align:center; margin:8px 0 0">Payout lands in your next weekly transfer after their first completed job.</p>
+    <button class="btn btn-ghost" style="margin-top:12px" onclick="closeSupport()">Close</button>`;
+  document.getElementById('support-overlay').classList.add('show');
+}
+function copyStylistCode(){
+  const code = STYLIST_REF_CODE;
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(code).then(() => flashInviteCopied()).catch(() => fallbackCopy(code));
+  } else {
+    fallbackCopy(code);
+  }
+}
+function fallbackCopy(text){
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); } catch(_){}
+  document.body.removeChild(ta);
+  flashInviteCopied();
+}
+function flashInviteCopied(){
+  const sheet = document.getElementById('support-sheet-content');
+  if(!sheet) return;
+  const note = document.createElement('p');
+  note.style.cssText = 'text-align:center; color:var(--moss); font-weight:600; font-size:13px; margin:8px 0 0';
+  note.textContent = 'Copied ✓';
+  sheet.appendChild(note);
+  setTimeout(() => note.remove(), 2000);
+}
+function shareStylistInvite(){
+  const text = `Join me on SnipñDrip — house-call beauty bookings. Use my code ${STYLIST_REF_CODE} and we both get R100 after your first paid job. https://snipndrip.app/join?code=${STYLIST_REF_CODE}`;
+  if(navigator.share){
+    navigator.share({ title: 'Join SnipñDrip', text }).catch(() => {});
+  } else if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(() => flashInviteCopied());
+  } else {
+    fallbackCopy(text);
+  }
+}
+function submitSupport(){
+  document.getElementById('support-sheet-content').innerHTML = `
+    <div class="ico" style="display:flex; background:var(--moss-pale)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+    <h3 style="text-align:center">Sent to our team</h3>
+    <p style="text-align:center">Thanks — someone from SnipñDrip's trust &amp; safety team will follow up within 24 hours.</p>
+    <button class="btn btn-primary" onclick="closeSupport()">Done</button>`;
+}
+
+/* ---------------- in-app chat ---------------- */
+const CHAT_STORE = {};
+function seedChat(id){
+  if(CHAT_STORE[id]) return CHAT_STORE[id];
+  const s = STYLISTS.find(x=>x.id===id);
+  CHAT_STORE[id] = [
+    {from:'them', text:`Hi! Thanks for checking out my profile. Happy to answer anything before you book — hair length, timing, whatever you need.`}
+  ];
+  return CHAT_STORE[id];
+}
+function openChat(id){
+  const s = STYLISTS.find(x=>x.id===id);
+  document.getElementById('chat-avatar').style.background = s.color;
+  document.getElementById('chat-avatar').textContent = s.initials;
+  document.getElementById('chat-name').textContent = s.name;
+  renderChat(id);
+  go('chat');
+  activeChatId = id;
+}
+let activeChatId = null;
+function renderChat(id){
+  const msgs = seedChat(id);
+  document.getElementById('chat-messages').innerHTML = msgs.map(m=>`<div class="bubble ${m.from==='me'?'me':'them'}">${m.text}</div>`).join('');
+  const box = document.getElementById('chat-messages');
+  box.scrollTop = box.scrollHeight;
+}
+function sendChat(){
+  const input = document.getElementById('chat-input');
+  const text = input.value.trim();
+  if(!text || activeChatId===null) return;
+  CHAT_STORE[activeChatId].push({from:'me', text});
+  input.value = '';
+  renderChat(activeChatId);
+  setTimeout(()=>{
+    CHAT_STORE[activeChatId].push({from:'them', text:'Got it — I typically reply within a few minutes. Feel free to book and add this in your notes too.'});
+    renderChat(activeChatId);
+  }, 900);
+}
+
+/* ---------------- stylist invoices & tax summary ---------------- */
+const INVOICE_MONTHS = [
+  {month:'September 2026', bookings:26, gross:8240},
+  {month:'August 2026', bookings:22, gross:6980},
+  {month:'July 2026', bookings:19, gross:5920}
+];
+function renderInvoices(){
+  const total = INVOICE_MONTHS.reduce((a,m)=>a+m.gross,0);
+  const setAside = Math.round(total*0.18);
+  document.getElementById('invoices-body').innerHTML = `
+    <div class="section-head" style="margin-top:0"><h2>Estimated tax set-aside</h2></div>
+    <div class="receipt">
+      <div class="r-row"><span>Gross earnings, last 3 months</span><span>R${total.toLocaleString()}</span></div>
+      <div class="r-row total"><span>Suggested set-aside (18%)</span><span>R${setAside.toLocaleString()}</span></div>
+    </div>
+    <p style="font-size:11px; color:#a89a89; margin:8px 0 20px">A rough guide only, not tax advice — as an independent contractor you're responsible for your own provisional tax with SARS. Check with a registered accountant for your actual liability.</p>
+    <div class="section-head"><h2>Recent payouts</h2></div>
+    <div class="list-row" onclick="openPayout('stylist')">
+      <div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><strong>Knotless braids · Naledi M.</strong><span>22 Sept · You earned R805.75</span></div></div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+    <div class="list-row" onclick="openPayout('shop')">
+      <div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg></div><div><strong>Order #4821 · 3 items</strong><span>22 Sept · You earned R348.00</span></div></div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+    <div class="section-head"><h2>Monthly statements</h2></div>
+    ${INVOICE_MONTHS.map(m=>`
+      <div class="list-row">
+        <div class="left"><div class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 2v4M16 2v4M4 10h16"/></svg></div><div><strong>${m.month}</strong><span>${m.bookings} bookings · R${m.gross.toLocaleString()}</span></div></div>
+        <button class="btn btn-ghost btn-sm" onclick="event.stopPropagation(); this.textContent='Sent ✓'">Email me</button>
+      </div>`).join('')}
+  `;
+}
+function openInvoices(){ renderInvoices(); go('invoices'); }
+
+/* ---------------- payout receipt ---------------- */
+function payoutCardHTML(p){
+  const d = p.display || {};
+  const b = p.breakdown || {};
+  const pct = d.commission_pct || String(Math.round((b.commission_rate_bps || 1500) / 100));
+  const passLabel = d.pass_through_label || (p.kind === 'shop' ? 'Delivery fee' : 'Travel fee');
+  const baseLabel = d.commissioned_label || (p.kind === 'shop' ? 'products' : 'service');
+  const serviceDisp = d.service || formatRandCents(b.service_or_product_cents);
+  const passDisp = d.pass_through || formatRandCents(b.pass_through_cents);
+  const subLine = p.kind === 'shop'
+    ? `Products ${serviceDisp} + delivery ${passDisp}`
+    : `Service ${serviceDisp} + travel ${passDisp}`;
+  return `
+    <div class="payout-card">
+      <div class="payout-head">
+        <div class="payout-eyebrow">You earned</div>
+        <div class="payout-hero">${d.amount || formatRandCents(p.amount_cents)}</div>
+        <div class="payout-hero-sub">${p.headline || ''}</div>
+        <div class="payout-status"><span class="dot"></span>${p.paid_at_label || (p.status === 'paid' ? 'Paid' : 'Pending')}</div>
+      </div>
+      <div class="payout-lines">
+        <div class="payout-line">
+          <span class="payout-line-label">Customer paid</span>
+          <span class="payout-line-val">${d.customer_paid || formatRandCents(b.customer_paid_cents)}</span>
+        </div>
+        <div class="payout-line sub">
+          <span class="payout-line-label">${subLine}</span>
+          <span class="payout-line-val"></span>
+        </div>
+        <div class="payout-line neg">
+          <span class="payout-line-label">SnipñDrip commission (${pct}% of ${baseLabel})</span>
+          <span class="payout-line-val">${d.commission || ('− ' + formatRandCents(p.commission_cents))}</span>
+        </div>
+        <div class="payout-divider-label">100% to you</div>
+        <div class="payout-line">
+          <span class="payout-line-label">${passLabel} <span class="tag">no commission</span></span>
+          <span class="payout-line-val">${passDisp}</span>
+        </div>
+        <div class="payout-total">
+          <span class="payout-total-label">Your payout</span>
+          <span class="payout-total-val">${d.amount || formatRandCents(p.amount_cents)}</span>
+        </div>
+        <div class="payout-note">
+          Commission applies to the ${baseLabel} price only. Travel, delivery, tips and urgency fees are never commissioned.
+          <a href="javascript:void(0)" onclick="openSupport('safety')">How payouts work</a>
+        </div>
+      </div>
+    </div>`;
+}
+
+async function renderPayout(view){
+  view = view || 'stylist';
+  const body = document.getElementById('payout-body');
+  body.innerHTML = `
+    <div class="payout-toggle">
+      <button class="${view==='stylist'?'active':''}" onclick="renderPayout('stylist')">Stylist view</button>
+      <button class="${view==='shop'?'active':''}" onclick="renderPayout('shop')">Shop view</button>
+    </div>
+    <p style="font-size:12px;color:#a89a89;padding:8px 4px">Loading payout…</p>`;
+
+  const payoutId = view === 'shop' ? 'po-seed-shop' : 'po-seed-1';
+  try {
+    const p = await snipFetch('/payouts/' + payoutId);
+    body.innerHTML = `
+      <div class="payout-toggle">
+        <button class="${view==='stylist'?'active':''}" onclick="renderPayout('stylist')">Stylist view</button>
+        <button class="${view==='shop'?'active':''}" onclick="renderPayout('shop')">Shop view</button>
+      </div>
+      ${payoutCardHTML(p)}`;
+  } catch (err) {
+    console.error(err);
+    body.innerHTML = `
+      <div class="payout-toggle">
+        <button class="${view==='stylist'?'active':''}" onclick="renderPayout('stylist')">Stylist view</button>
+        <button class="${view==='shop'?'active':''}" onclick="renderPayout('shop')">Shop view</button>
+      </div>
+      <p style="font-size:13px;color:#a33d2c;padding:12px 4px">Couldn't load payout. ${err.message || ''}</p>`;
+  }
+}
+function openPayout(view){
+  renderPayout(view || 'stylist');
+  go('payout');
+}
+
+/* ---------------- expandable info cards ---------------- */
+function toggleExpand(key){
+  document.getElementById(key+'-head').classList.toggle('open');
+  document.getElementById(key+'-body').classList.toggle('open');
+}
+
+/* ---------------- navigation ---------------- */
+const ROOTS = ['home','bookings','market','safety','profile'];
+let stack = ['home'];
+
+const NAV_ITEMS = [
+  {id:'home', label:'Discover', icon:'<path d="M4 11l8-7 8 7M6 10v9h12v-9"/>'},
+  {id:'bookings', label:'Bookings', icon:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/>'},
+  {id:'market', label:'Shop', icon:'<path d="M6 7h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2L6 7z"/><path d="M9 7a3 3 0 016 0"/>'},
+  {id:'safety', label:'Safety', icon:'<path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"/>'},
+  {id:'profile', label:'Profile', icon:'<circle cx="12" cy="8" r="3.2"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6"/>'}
+];
+function buildNav(root){
+  return `<div class="bottom-nav">${NAV_ITEMS.map(n=>`
+    <button class="nav-item ${n.id===root?'active':''}" onclick="goRoot('${n.id}')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">${n.icon}</svg>
+      <span>${n.label}</span>
+    </button>`).join('')}</div>`;
+}
+ROOTS.forEach(r=>{ document.getElementById('nav-'+r).innerHTML = buildNav(r); });
+
+function showScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+}
+function goRoot(name){
+  stack = [name];
+  showScreen(name);
+  if(name==='booking'){ bookingStep=0; renderBookingStep(); }
+}
+function go(name, opts){
+  opts = opts || {};
+  stack.push(name);
+  showScreen(name);
+  if(name==='booking'){
+    if(!opts.keepStep) bookingStep = 0;
+    renderBookingStep();
+  }
+}
+function back(){
+  if(stack.length>1){ stack.pop(); showScreen(stack[stack.length-1]); }
+  else showScreen(stack[0]);
+}
+
+function setMode(m){
+  document.getElementById('mode-customer').classList.toggle('active', m==='customer');
+  document.getElementById('mode-stylist').classList.toggle('active', m==='stylist');
+  document.getElementById('profile-customer').style.display = m==='customer' ? 'block' : 'none';
+  document.getElementById('profile-stylist').style.display = m==='stylist' ? 'block' : 'none';
+}
+
+/* ---------------- panic hold buttons ---------------- */
+function showPanicUI(state, detail){
+  // state: 'sending' | 'ok' | 'fail'
+  const title = document.getElementById('panic-title');
+  const body = document.getElementById('panic-body');
+  const actions = document.getElementById('panic-actions');
+  const fallback = document.getElementById('panic-fallback');
+  document.getElementById('panic-overlay').classList.add('show');
+  if(state === 'sending'){
+    title.textContent = 'Sending alert…';
+    body.textContent = 'Reaching your emergency contact and SnipñDrip\'s safety team.';
+    actions.style.display = 'none';
+    fallback.style.display = 'none';
+  } else if(state === 'ok'){
+    title.textContent = 'Your alert has been sent';
+    body.textContent = 'Your emergency contact and SnipñDrip\'s safety team can now see your live location and booking details.';
+    actions.style.display = 'block';
+    fallback.style.display = 'none';
+  } else {
+    title.textContent = "Couldn't reach safety team";
+    body.textContent = detail || 'Calling emergency services is the fastest backup. Use the numbers below.';
+    actions.style.display = 'none';
+    fallback.style.display = 'block';
+  }
+}
+
+async function triggerPanicAlert(){
+  showPanicUI('sending');
+  let lat = -26.1465, lng = 28.0435;
+  try {
+    if(navigator.geolocation){
+      const pos = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 2500, maximumAge: 60000 });
+      });
+      lat = pos.coords.latitude;
+      lng = pos.coords.longitude;
+    }
+  } catch (_) { /* use last known / demo coords */ }
+
+  try {
+    const bookingId = (BOOKINGS[0] && BOOKINGS[0].bookingId) || null;
+    await snipFetch('/panic', {
+      method: 'POST',
+      body: { lat, lng, booking_id: bookingId }
+    });
+    // ONLY show success after API confirms
+    showPanicUI('ok');
+  } catch (err) {
+    console.error('panic dispatch failed', err);
+    showPanicUI('fail', "Couldn't reach safety team. Calling emergency services…");
+  }
+}
+
+function setupPanic(btnId, ringId){
+  const btn = document.getElementById(btnId);
+  if(!btn) return;
+  let holding=false, start=0, raf=null, fired=false;
+  function frame(){
+    if(!holding) return;
+    const pct = Math.min(100, ((performance.now()-start)/1600)*100);
+    document.getElementById(ringId).style.setProperty('--pct', pct);
+    if(pct>=100){
+      holding=false;
+      document.getElementById(ringId).style.setProperty('--pct',0);
+      if(!fired){ fired=true; triggerPanicAlert(); setTimeout(()=>{ fired=false; }, 3000); }
+      return;
+    }
+    raf = requestAnimationFrame(frame);
+  }
+  function startHold(e){ e.preventDefault(); holding=true; start=performance.now(); raf=requestAnimationFrame(frame); }
+  function endHold(){ holding=false; document.getElementById(ringId).style.setProperty('--pct',0); if(raf) cancelAnimationFrame(raf); }
+  btn.addEventListener('pointerdown', startHold);
+  btn.addEventListener('pointerup', endHold);
+  btn.addEventListener('pointerleave', endHold);
+}
+setupPanic('panic-btn','panic-ring');
+setupPanic('panic-btn-2','panic-ring-2');
+function closePanic(){ document.getElementById('panic-overlay').classList.remove('show'); }
+
+/* ---------------- eta countdown ---------------- */
+let eta = 14;
+function renderTracking(i){
+  trackingBookingIdx = i;
+  const b = BOOKINGS[i];
+  const s = STYLISTS.find(x=>x.id===b.stylistId);
+  trackingStylistId = s.id;
+  eta = 12 + Math.round(Math.random()*8);
+  document.getElementById('track-title').textContent = `${s.name.split(' ')[0]} is on her way`;
+  document.getElementById('track-avatar').style.background = s.color;
+  document.getElementById('track-avatar').textContent = s.initials;
+  document.getElementById('track-name-eta').innerHTML = `${s.name} · arriving in <span id="eta-min">${eta}</span> min`;
+  document.getElementById('track-service-addr').textContent = `${b.service} · ${b.address}`;
+  document.getElementById('track-service').textContent = b.service;
+  document.getElementById('track-when').textContent = b.when;
+  document.getElementById('track-address').textContent = b.address;
+  document.getElementById('track-total').textContent = `R ${b.total}`;
+}
+setInterval(()=>{
+  if(eta>1){ eta--; const e=document.getElementById('eta-min'); if(e) e.textContent = eta; }
+}, 4000);
+
+/* init */
+renderStylistDetail(1);
+renderBookingStep();
+renderTracking(0);
+</script>
+
+
+</body></html>

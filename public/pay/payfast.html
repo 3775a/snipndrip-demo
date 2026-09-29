@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to PayFast…</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f7f1e8; color: #2c241c;
+      display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    p { font-size: 15px; }
+  </style>
+</head>
+<body>
+  <p id="msg">Redirecting to PayFast…</p>
+  <form id="pf" method="POST"></form>
+  <script>
+    try {
+      const hash = location.hash.slice(1);
+      if (!hash) throw new Error('Missing payment data');
+      const json = decodeURIComponent(escape(atob(hash.replace(/-/g, '+').replace(/_/g, '/'))));
+      const payload = JSON.parse(json);
+      const form = document.getElementById('pf');
+      form.action = payload.action;
+      Object.entries(payload.fields || {}).forEach(([k, v]) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = k;
+        input.value = v;
+        form.appendChild(input);
+      });
+      form.submit();
+    } catch (e) {
+      document.getElementById('msg').textContent = 'Could not start PayFast: ' + (e.message || e);
+    }
+  </script>
+</body>
+</html>
